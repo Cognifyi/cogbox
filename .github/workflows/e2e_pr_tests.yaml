@@ -21,7 +21,7 @@ concurrency:
 
 jobs:
   e2e-pr-tests:
-    if: github.repository == 'daytonaio/daytona'
+    if: github.repository == 'daytonaio/daytona' || github.repository == 'Cognifyi/cogbox'
     name: E2E sandbox lifecycle (from source)
     runs-on: blacksmith-4vcpu-ubuntu-2404
     timeout-minutes: 30

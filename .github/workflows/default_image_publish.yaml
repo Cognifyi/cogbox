@@ -22,7 +22,7 @@ env:
 
 jobs:
   docker_build:
-    if: github.repository == 'daytonaio/daytona'
+    if: github.repository == 'daytonaio/daytona' || github.repository == 'Cognifyi/cogbox'
     strategy:
       fail-fast: false
       matrix:
