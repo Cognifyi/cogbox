@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
 
 =begin
-#Daytona Toolbox API
+#Cogbox Toolbox API
 
-#Daytona Toolbox API
+#Cogbox Toolbox API
 
 The version of the OpenAPI document: v0.0.0-dev
 
@@ -13,17 +13,17 @@ Generator version: 7.12.0
 =end
 
 $:.push File.expand_path("../lib", __FILE__)
-require "daytona_toolbox_api_client/version"
+require "cogbox_toolbox_api_client/version"
 
 Gem::Specification.new do |s|
-  s.name        = "daytona_toolbox_api_client"
-  s.version     = DaytonaToolboxApiClient::VERSION
+  s.name        = "cogbox_toolbox_api_client"
+  s.version     = CogboxToolboxApiClient::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["daytonaio"]
-  s.email       = ["support@daytona.io"]
-  s.homepage    = "https://github.com/daytonaio/daytona"
-  s.summary     = "Daytona Toolbox API Ruby Gem"
-  s.description = "Daytona Toolbox API Client"
+  s.authors     = ["cogboxio"]
+  s.email       = ["support@cogbox.io"]
+  s.homepage    = "https://github.com/cogboxio/cogbox"
+  s.summary     = "Cogbox Toolbox API Ruby Gem"
+  s.description = "Cogbox Toolbox API Client"
   s.license     = "Unlicense"
   s.required_ruby_version = ">= 2.7"
   s.metadata = {}

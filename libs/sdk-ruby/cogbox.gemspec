@@ -1,23 +1,23 @@
 # frozen_string_literal: true
 
-require_relative 'lib/daytona/sdk/version'
+require_relative 'lib/cogbox/sdk/version'
 
 Gem::Specification.new do |spec|
-  spec.name = 'daytona'
-  spec.version = Daytona::Sdk::VERSION
-  spec.authors = ['Daytona Platforms Inc.']
-  spec.email = ['support@daytona.io']
+  spec.name = 'cogbox'
+  spec.version = Cogbox::Sdk::VERSION
+  spec.authors = ['Cognifyi']
+  spec.email = ['support@cognifyi.com']
 
-  spec.summary = 'Ruby SDK for Daytona'
-  spec.description = 'High-level Ruby SDK for Daytona: sandboxes, git, filesystem, LSP, process, and object storage.'
-  spec.homepage = 'https://github.com/daytonaio/daytona'
+  spec.summary = 'Ruby SDK for Cogbox'
+  spec.description = 'High-level Ruby SDK for Cogbox: sandboxes, git, filesystem, LSP, process, and object storage.'
+  spec.homepage = 'https://github.com/Cognifyi/cogbox'
   spec.required_ruby_version = '>= 3.2.0'
 
   spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
   spec.metadata['homepage_uri'] = spec.homepage
-  spec.metadata['source_code_uri'] = 'https://github.com/daytonaio/daytona'
-  spec.metadata['changelog_uri'] = 'https://github.com/daytonaio/daytona/releases'
+  spec.metadata['source_code_uri'] = 'https://github.com/Cognifyi/cogbox'
+  spec.metadata['changelog_uri'] = 'https://github.com/Cognifyi/cogbox/releases'
   spec.metadata['rubygems_mfa_required'] = 'true'
 
   # Specify which files should be added to the gem when it is released.
@@ -39,8 +39,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'opentelemetry-sdk', '~> 1.4'
 
   spec.add_dependency 'aws-sdk-s3', '~> 1.0'
-  spec.add_dependency 'daytona_api_client', Daytona::Sdk::VERSION
-  spec.add_dependency 'daytona_toolbox_api_client', Daytona::Sdk::VERSION
+  spec.add_dependency 'cogbox_api_client', Cogbox::Sdk::VERSION
+  spec.add_dependency 'cogbox_toolbox_api_client', Cogbox::Sdk::VERSION
   spec.add_dependency 'dotenv', '~> 2.0'
   spec.add_dependency 'observer', '~> 0.1'
   spec.add_dependency 'toml', '~> 0.3'
