@@ -17,7 +17,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@daytona/sdk": "^0.163.0",
+    "@cognifyi/sdk": "^0.163.0",
     "dotenv": "^16.3.1"
   },
   "devDependencies": {

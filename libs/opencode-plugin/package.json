@@ -1,7 +1,7 @@
 {
-  "name": "@daytona/opencode",
+  "name": "@cognifyi/opencode",
   "version": "0.0.0-dev",
-  "description": "OpenCode plugin that automatically runs all sessions in Daytona sandboxes for isolated, reproducible development environments",
+  "description": "OpenCode plugin that automatically runs all sessions in Cogbox sandboxes for isolated, reproducible development environments",
   "main": "./.opencode/plugin/index.js",
   "types": "./.opencode/plugin/index.d.ts",
   "files": [
@@ -9,21 +9,21 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daytonaio/daytona.git"
+    "url": "git+https://github.com/Cognifyi/cogbox.git"
   },
-  "author": "Daytona Platforms Inc.",
+  "author": "Cognifyi",
   "license": "Apache-2.0",
   "dependencies": {
-    "@daytona/sdk": "^0.163.0",
+    "@cognifyi/sdk": "^0.163.0",
     "@opencode-ai/plugin": "1.1.59",
     "xdg-basedir": "^5.1.0",
     "zod": "^4.2.1"
   },
   "bugs": {
-    "url": "https://github.com/daytonaio/daytona/issues"
+    "url": "https://github.com/Cognifyi/cogbox/issues"
   },
   "keywords": [
-    "daytona",
+    "cogbox",
     "opencode",
     "plugin"
   ]
