@@ -17,8 +17,8 @@ permissions: {}
 env:
   VERSION: ${{ inputs.version }}
   BUILDX_NO_DEFAULT_ATTESTATIONS: 1
-  REGISTRY_IMAGE: daytonaio/sandbox
-  GPU_REGISTRY_IMAGE: daytonaio/sandbox-gpu
+  REGISTRY_IMAGE: ${{ github.repository_owner }}/sandbox
+  GPU_REGISTRY_IMAGE: ${{ github.repository_owner }}/sandbox-gpu
 
 jobs:
   docker_build:
@@ -62,7 +62,7 @@ jobs:
         uses: docker/login-action@650006c6eb7dba73a995cc03b0b2d7f5ca915bee # v4.2.0
         with:
           registry: docker.io
-          username: daytonaio
+          username: ${{ github.repository_owner }}
           password: ${{ secrets.DOCKER_TOKEN }}
 
       - name: Build and push sandbox by digest
@@ -182,7 +182,7 @@ jobs:
         uses: docker/login-action@650006c6eb7dba73a995cc03b0b2d7f5ca915bee # v4.2.0
         with:
           registry: docker.io
-          username: daytonaio
+          username: ${{ github.repository_owner }}
           password: ${{ secrets.DOCKER_TOKEN }}
 
       - name: Create and push sandbox manifest
