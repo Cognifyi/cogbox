@@ -4,7 +4,7 @@ plugins {
     signing
 }
 
-group = "io.daytona"
+group = "io.cognifyi"
 version = "0.0.0-dev"
 
 val depVersion = version.toString()
@@ -22,8 +22,8 @@ repositories {
 }
 
 dependencies {
-    api("io.daytona:api-client:$depVersion")
-    api("io.daytona:toolbox-api-client:$depVersion")
+    api("io.cognifyi:api-client:$depVersion")
+    api("io.cognifyi:toolbox-api-client:$depVersion")
     api("com.squareup.okhttp3:okhttp:4.12.0")
     api("com.fasterxml.jackson.core:jackson-databind:2.17.2")
     api("com.fasterxml.jackson.core:jackson-annotations:2.17.2")
@@ -66,9 +66,9 @@ publishing {
             from(components["java"])
 
             pom {
-                name.set("Daytona Java SDK")
-                description.set("Official Java SDK for Daytona — secure, elastic cloud infrastructure for running AI-generated code")
-                url.set("https://github.com/daytonaio/daytona")
+                name.set("Cogbox Java SDK")
+                description.set("Official Java SDK for Cogbox — secure, elastic cloud infrastructure for running AI-generated code")
+                url.set("https://github.com/cognifyi/daytona")
 
                 licenses {
                     license {
@@ -79,16 +79,16 @@ publishing {
 
                 developers {
                     developer {
-                        id.set("daytonaio")
-                        name.set("Daytona Platforms Inc.")
+                        id.set("cognifyi")
+                        name.set("Cogbox Platforms Inc.")
                         email.set("support@daytona.io")
                     }
                 }
 
                 scm {
-                    connection.set("scm:git:git://github.com/daytonaio/daytona.git")
-                    developerConnection.set("scm:git:ssh://github.com:daytonaio/daytona.git")
-                    url.set("https://github.com/daytonaio/daytona")
+                    connection.set("scm:git:git://github.com/cognifyi/daytona.git")
+                    developerConnection.set("scm:git:ssh://github.com:cognifyi/daytona.git")
+                    url.set("https://github.com/cognifyi/daytona")
                 }
             }
         }

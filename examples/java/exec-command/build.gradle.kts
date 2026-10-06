@@ -2,7 +2,7 @@ plugins {
     application
 }
 
-group = "io.daytona.examples"
+group = "io.cognifyi.examples"
 version = "0.1.0"
 
 java {
@@ -16,9 +16,9 @@ repositories {
 }
 
 dependencies {
-    implementation("io.daytona:sdk-java")
+    implementation("io.cognifyi:sdk-java")
 }
 
 application {
-    mainClass.set("io.daytona.examples.ExecCommand")
+    mainClass.set("io.cognifyi.examples.ExecCommand")
 }
