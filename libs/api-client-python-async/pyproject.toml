@@ -1,9 +1,9 @@
 [project]
-name = "daytona_api_client_async"
+name = "cogbox_api_client_async"
 version = "0.0.0-dev"
 description = "Daytona"
 authors = [
-  {name = "Daytona Platforms Inc.",email = "support@daytona.com"},
+  {name = "Cognifyi",email = "support@daytona.com"},
 ]
 license = { text = "Apache-2.0" }
 readme = "README.md"
@@ -19,7 +19,7 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/daytonaio/daytona"
+Repository = "https://github.com/Cognifyi/cogbox"
 
 [tool.poetry]
 requires-poetry = ">=2.0"
@@ -42,7 +42,7 @@ extension-pkg-whitelist = "pydantic"
 
 [tool.mypy]
 files = [
-  "daytona_api_client_async",
+  "cogbox_api_client_async",
   #"test",  # auto-generated tests
   "tests", # hand-written tests
 ]
@@ -80,7 +80,7 @@ disallow_any_generics = true
 
 [[tool.mypy.overrides]]
 module = [
-  "daytona_api_client_async.configuration",
+  "cogbox_api_client_async.configuration",
 ]
 warn_unused_ignores = true
 strict_equality = true
