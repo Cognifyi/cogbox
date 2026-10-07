@@ -150,7 +150,7 @@ jobs:
 
   docker_manifest:
     needs: docker_build
-    runs-on: blacksmith-4vcpu-ubuntu-2404
+    runs-on: ubuntu-latest
     permissions: {}
 
     steps:

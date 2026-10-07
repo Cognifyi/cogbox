@@ -131,7 +131,7 @@ jobs:
 
   update-homebrew-tap:
     if: ${{ (github.repository == 'daytonaio/daytona' || github.repository == 'Cognifyi/cogbox') && inputs.npm_tag == 'latest' }}
-    runs-on: blacksmith-4vcpu-ubuntu-2404
+    runs-on: ubuntu-latest
     permissions: {}
     name: Update Homebrew CLI tap
     steps:
