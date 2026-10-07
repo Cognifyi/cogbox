@@ -8,7 +8,7 @@ permissions: {}
 jobs:
   translate:
     runs-on: ubuntu-latest
-    if: ${{ (github.repository == 'daytonaio/daytona' || github.repository == 'Cognifyi/cogbox') && github.event.head_commit.author.name != 'github-actions[bot]' && !contains(github.event.head_commit.message, 'gt-translate/') }}
+    if: ${{ (github.repository == 'daytonaio/daytona' || github.repository == 'cognifyi/cogbox') && github.event.head_commit.author.name != 'github-actions[bot]' && !contains(github.event.head_commit.message, 'gt-translate/') }}
     permissions:
       contents: write
       pull-requests: write
