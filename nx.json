@@ -159,9 +159,7 @@
             "registry:5000/cognifyi/test-daytona-{projectName}:latest"
           ],
           "cache-from": ["type=registry,ref=registry:5000/cognifyi/test-daytona-{projectName}:buildcache"],
-          "cache-to": [
-            "type=registry,ref=registry:5000/cognifyi/test-daytona-{projectName}:buildcache,mode=max"
-          ]
+          "cache-to": ["type=registry,ref=registry:5000/cognifyi/test-daytona-{projectName}:buildcache,mode=max"]
         },
         "pr-build": {
           "push": false,
