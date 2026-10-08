@@ -38,7 +38,7 @@ The Docker Compose configuration includes all the necessary services to run Dayt
      - Make sure that the default snapshot is active at http://localhost:3000/dashboard/snapshots
    - PgAdmin: http://localhost:5050
    - Registry UI: http://localhost:5100
-   - MinIO Console: http://localhost:9001 (minioadmin / minioadmin)
+   - RustFS Console: http://localhost:9001 (minioadmin / minioadmin)
 
 ## DNS Setup for Proxy URLs
 
