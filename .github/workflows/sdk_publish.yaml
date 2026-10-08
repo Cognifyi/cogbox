@@ -37,7 +37,7 @@ permissions: {}
 
 jobs:
   publish:
-    if: github.repository == 'daytonaio/daytona' || github.repository == 'Cognifyi/cogbox'
+    if: github.repository == 'daytonaio/daytona' || github.repository == 'cognifyi/cogbox'
     runs-on: blacksmith-16vcpu-ubuntu-2404
     permissions:
       contents: read
@@ -130,7 +130,7 @@ jobs:
           git remote set-url origin "https://github.com/${GITHUB_REPOSITORY}" 2>/dev/null || true
 
   update-homebrew-tap:
-    if: ${{ (github.repository == 'daytonaio/daytona' || github.repository == 'Cognifyi/cogbox') && inputs.npm_tag == 'latest' }}
+    if: ${{ (github.repository == 'daytonaio/daytona' || github.repository == 'cognifyi/cogbox') && inputs.npm_tag == 'latest' }}
     runs-on: ubuntu-latest
     permissions: {}
     name: Update Homebrew CLI tap

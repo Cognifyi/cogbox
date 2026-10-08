@@ -8,7 +8,7 @@ permissions: {}
 
 jobs:
   build:
-    if: github.repository == 'daytonaio/daytona' || github.repository == 'Cognifyi/cogbox'
+    if: github.repository == 'daytonaio/daytona' || github.repository == 'cognifyi/cogbox'
     runs-on: ubuntu-latest
     permissions:
       contents: read
