@@ -17,8 +17,12 @@ permissions: {}
 env:
   VERSION: ${{ inputs.version }}
   BUILDX_NO_DEFAULT_ATTESTATIONS: 1
-  REGISTRY_IMAGE: ${{ github.repository_owner }}/sandbox
-  GPU_REGISTRY_IMAGE: ${{ github.repository_owner }}/sandbox-gpu
+  # Fully-qualified names: short names (e.g. `owner/sandbox`) rely on each
+  # builder's default-registry normalization, which differs between the
+  # Blacksmith remote builder (digest push) and the local builder used by
+  # `imagetools create`. `docker.io/` prefix keeps both sides identical.
+  REGISTRY_IMAGE: docker.io/${{ github.repository_owner }}/sandbox
+  GPU_REGISTRY_IMAGE: docker.io/${{ github.repository_owner }}/sandbox-gpu
 
 jobs:
   docker_build:
@@ -175,8 +179,18 @@ jobs:
           pattern: digests-gpu-*
           merge-multiple: true
 
-      - name: Setup Blacksmith Builder
-        uses: useblacksmith/setup-docker-builder@ab5c1da94f53f5cd75c1038092aa276dddfccbba # v1.9.0
+      - name: Set up Docker Buildx
+        # NOTE: intentionally NOT the Blacksmith builder here. `imagetools create`
+        # pushes the manifest list through the builder's BuildKit push path, and the
+        # Blacksmith-pinned buildx v0.23.0 treats the registry's 404 for a not-yet
+        # existing destination tag (first publish to a new namespace) as fatal:
+        #   failed commit on ref "index-sha256:...": unexpected status from GET
+        #   request to .../manifests/<tag>: 404 Not Found
+        # The stock docker-container builder talks to the registry directly and
+        # handles new tags correctly.
+        uses: docker/setup-buildx-action@8d2750c68a42422c14e847fe6c8ac0403b4cbd6f # v3
+        with:
+          driver: docker-container
 
       - name: Log in to Docker Hub
         uses: docker/login-action@650006c6eb7dba73a995cc03b0b2d7f5ca915bee # v4.2.0
@@ -190,36 +204,75 @@ jobs:
         env:
           PUSH_LATEST: ${{ inputs.push_latest }}
         run: |
-          TAGS="-t ${REGISTRY_IMAGE}:${VERSION}"
-          if [ "$PUSH_LATEST" = "true" ]; then
-            TAGS="$TAGS -t ${REGISTRY_IMAGE}:latest"
+          set -euo pipefail
+          shopt -s nullglob
+          files=(*)
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo "::error::No sandbox digests found in ${PWD}; digest download must have failed" >&2
+            exit 1
           fi
-          docker buildx imagetools create $TAGS \
-            $(printf "${REGISTRY_IMAGE}@sha256:%s " *)
+          echo "Source digests: ${files[*]}"
+          for d in "${files[@]}"; do
+            docker buildx imagetools inspect "${REGISTRY_IMAGE}@sha256:${d}" >/dev/null
+          done
+          TAGS="-t ${REGISTRY_IMAGE}:${VERSION}"
+          if [ "${PUSH_LATEST}" = "true" ]; then
+            TAGS="${TAGS} -t ${REGISTRY_IMAGE}:latest"
+          fi
+          echo "Creating ${TAGS}"
+          # shellcheck disable=SC2086: intentional word splitting of $TAGS into multiple -t flags
+          docker buildx imagetools create --progress=plain $TAGS \
+            $(printf "${REGISTRY_IMAGE}@sha256:%s " "${files[@]}")
 
       - name: Create and push sandbox-slim manifest
         working-directory: ${{ runner.temp }}/digests/sandbox-slim
         env:
           PUSH_LATEST: ${{ inputs.push_latest }}
         run: |
-          TAGS="-t ${REGISTRY_IMAGE}:${VERSION}-slim"
-          if [ "$PUSH_LATEST" = "true" ]; then
-            TAGS="$TAGS -t ${REGISTRY_IMAGE}:latest-slim"
+          set -euo pipefail
+          shopt -s nullglob
+          files=(*)
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo "::error::No sandbox-slim digests found in ${PWD}; digest download must have failed" >&2
+            exit 1
           fi
-          docker buildx imagetools create $TAGS \
-            $(printf "${REGISTRY_IMAGE}@sha256:%s " *)
+          echo "Source digests: ${files[*]}"
+          for d in "${files[@]}"; do
+            docker buildx imagetools inspect "${REGISTRY_IMAGE}@sha256:${d}" >/dev/null
+          done
+          TAGS="-t ${REGISTRY_IMAGE}:${VERSION}-slim"
+          if [ "${PUSH_LATEST}" = "true" ]; then
+            TAGS="${TAGS} -t ${REGISTRY_IMAGE}:latest-slim"
+          fi
+          echo "Creating ${TAGS}"
+          # shellcheck disable=SC2086: intentional word splitting of $TAGS into multiple -t flags
+          docker buildx imagetools create --progress=plain $TAGS \
+            $(printf "${REGISTRY_IMAGE}@sha256:%s " "${files[@]}")
 
       - name: Create and push sandbox-gpu manifest
         working-directory: ${{ runner.temp }}/digests/sandbox-gpu
         env:
           PUSH_LATEST: ${{ inputs.push_latest }}
         run: |
-          TAGS="-t ${GPU_REGISTRY_IMAGE}:${VERSION}"
-          if [ "$PUSH_LATEST" = "true" ]; then
-            TAGS="$TAGS -t ${GPU_REGISTRY_IMAGE}:latest"
+          set -euo pipefail
+          shopt -s nullglob
+          files=(*)
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo "::error::No sandbox-gpu digests found in ${PWD}; digest download must have failed" >&2
+            exit 1
           fi
-          docker buildx imagetools create $TAGS \
-            $(printf "${GPU_REGISTRY_IMAGE}@sha256:%s " *)
+          echo "Source digests: ${files[*]}"
+          for d in "${files[@]}"; do
+            docker buildx imagetools inspect "${GPU_REGISTRY_IMAGE}@sha256:${d}" >/dev/null
+          done
+          TAGS="-t ${GPU_REGISTRY_IMAGE}:${VERSION}"
+          if [ "${PUSH_LATEST}" = "true" ]; then
+            TAGS="${TAGS} -t ${GPU_REGISTRY_IMAGE}:latest"
+          fi
+          echo "Creating ${TAGS}"
+          # shellcheck disable=SC2086: intentional word splitting of $TAGS into multiple -t flags
+          docker buildx imagetools create --progress=plain $TAGS \
+            $(printf "${GPU_REGISTRY_IMAGE}@sha256:%s " "${files[@]}")
 
       - name: Inspect images
         run: |
