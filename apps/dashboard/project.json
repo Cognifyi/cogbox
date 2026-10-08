@@ -6,6 +6,7 @@
   "tags": [],
   "targets": {
     "build": {
+      "outputs": ["{workspaceRoot}/dist/apps/dashboard"],
       "configurations": {
         "production": {
           "mode": "production"

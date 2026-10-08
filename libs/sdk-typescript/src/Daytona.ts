@@ -835,6 +835,12 @@ export class Daytona implements AsyncDisposable {
   public static createAxiosInstance(): AxiosInstance {
     const axiosInstance = axios.create({
       timeout: 24 * 60 * 60 * 1000, // 24 hours
+      // Workaround for axios >=1.20 fetch adapter on Cloudflare Workers (workerd):
+      // it sets `cache: 'default'` on every Request, which workerd rejects with
+      // `TypeError: Unsupported cache mode: default`. Explicitly using a mode
+      // workerd accepts ('no-store') prevents the default from being applied.
+      // See https://github.com/axios/axios/issues/11192
+      fetchOptions: { cache: 'no-store' },
     })
 
     // Request interceptor: Inject trace context into headers
