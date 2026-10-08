@@ -28,8 +28,7 @@ on:
     branches:
       - main
       - develop
-      # Temporary: allows verifying this split via a PR targeting the
-      # refactoring base branch. Remove before merging to main.
+      # Integration branch: PRs targeting it run the same E2E gates as main.
       - nx-cloud-setup
 
 permissions:
