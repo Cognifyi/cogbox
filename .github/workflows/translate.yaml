@@ -1,14 +1,19 @@
 name: GT Translate
+# NOTE: auto-trigger on push is disabled on purpose. The pinned
+# generaltranslation/translate action + locadex@0.1.17 only supports
+# Next.js projects with the legacy `gt-next` package, while this repo
+# uses `gt-react` on an Astro docs site, so every automatic run fails.
+# Keep the workflow available for manual runs only (upstream removed
+# this file entirely).
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
 
 permissions: {}
 
 jobs:
   translate:
     runs-on: ubuntu-latest
-    if: ${{ (github.repository == 'daytonaio/daytona' || github.repository == 'cognifyi/cogbox') && github.event.head_commit.author.name != 'github-actions[bot]' && !contains(github.event.head_commit.message, 'gt-translate/') }}
+    if: github.repository == 'daytonaio/daytona' || github.repository == 'cognifyi/cogbox'
     permissions:
       contents: write
       pull-requests: write
