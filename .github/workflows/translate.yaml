@@ -17,6 +17,10 @@ jobs:
 
       - uses: generaltranslation/translate@7e7badcae4494bfa58c95415a933251992aedb7c # v0
         with:
+          # NOTE: `api_key` (not `gt_api_key`) is the required input in this
+          # pinned action version; omitting it fails with
+          # "Input required and not supplied: api_key".
+          api_key: ${{ secrets.GT_API_KEY }}
           gt_api_key: ${{ secrets.GT_API_KEY }}
           gt_project_id: ${{ secrets.GT_PROJECT_ID }}
           config: 'apps/docs/gt.config.json'
