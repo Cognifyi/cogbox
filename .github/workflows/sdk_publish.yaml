@@ -38,7 +38,7 @@ permissions: {}
 jobs:
   publish:
     if: github.repository == 'daytonaio/daytona' || github.repository == 'cognifyi/cogbox'
-    runs-on: blacksmith-16vcpu-ubuntu-2404
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     name: Publish ${{ matrix.name }}
