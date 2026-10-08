@@ -1,7 +1,7 @@
 name: daytona
 services:
   api:
-    image: daytonaio/daytona-api
+    image: cognifyi/daytona-api
     ports:
       - 3000:3000
     environment:
@@ -105,7 +105,7 @@ services:
       - registry
 
   proxy:
-    image: daytonaio/daytona-proxy
+    image: cognifyi/daytona-proxy
     environment:
       - DAYTONA_API_URL=http://api:3000/api
       - PROXY_PORT=4000
@@ -127,7 +127,7 @@ services:
     restart: always
 
   runner:
-    image: daytonaio/daytona-runner
+    image: cognifyi/daytona-runner
     environment:
       - ENVIRONMENT=development
       - API_PORT=3003
@@ -152,7 +152,7 @@ services:
     restart: always
 
   ssh-gateway:
-    image: daytonaio/daytona-ssh-gateway
+    image: cognifyi/daytona-ssh-gateway
     environment:
       - API_URL=http://api:3000/api
       - API_KEY=ssh_secret_api_token
