@@ -6,9 +6,9 @@ package sandbox
 import (
 	"context"
 
-	"github.com/daytonaio/daytona/cli/apiclient"
-	"github.com/daytonaio/daytona/cli/cmd/common"
-	"github.com/daytonaio/daytona/cli/views/sandbox"
+	"github.com/cognifyi/cogbox/cli/apiclient"
+	"github.com/cognifyi/cogbox/cli/cmd/common"
+	"github.com/cognifyi/cogbox/cli/views/sandbox"
 	"github.com/spf13/cobra"
 )
 

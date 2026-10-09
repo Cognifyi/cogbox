@@ -12,8 +12,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/daytonaio/daytona/cli/config"
-	apiclient "github.com/daytonaio/daytona/libs/api-client-go"
+	"github.com/cognifyi/cogbox/cli/config"
+	apiclient "github.com/cognifyi/cogbox/libs/api-client-go"
 )
 
 type ExecuteRequest struct {

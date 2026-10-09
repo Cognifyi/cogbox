@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/daytonaio/daytona/cli/cmd/mcp/agents"
+	"github.com/cognifyi/cogbox/cli/cmd/mcp/agents"
 	"github.com/spf13/cobra"
 )
 

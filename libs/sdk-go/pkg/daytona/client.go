@@ -67,12 +67,12 @@ import (
 	"strings"
 	"time"
 
-	apiclient "github.com/daytonaio/daytona/libs/api-client-go"
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/common"
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/errors"
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/options"
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/types"
-	toolbox "github.com/daytonaio/daytona/libs/toolbox-api-client-go"
+	apiclient "github.com/cognifyi/cogbox/libs/api-client-go"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/common"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/errors"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/options"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/types"
+	toolbox "github.com/cognifyi/cogbox/libs/toolbox-api-client-go"
 )
 
 const (

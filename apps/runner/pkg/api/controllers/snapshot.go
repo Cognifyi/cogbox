@@ -16,12 +16,12 @@ import (
 
 	"context"
 
-	"github.com/daytonaio/runner/cmd/runner/config"
-	"github.com/daytonaio/runner/pkg/api/dto"
-	"github.com/daytonaio/runner/pkg/runner"
+	"github.com/cognifyi/cogbox/runner/cmd/runner/config"
+	"github.com/cognifyi/cogbox/runner/pkg/api/dto"
+	"github.com/cognifyi/cogbox/runner/pkg/runner"
 	"github.com/gin-gonic/gin"
 
-	common_errors "github.com/daytonaio/common-go/pkg/errors"
+	common_errors "github.com/cognifyi/cogbox/common-go/pkg/errors"
 )
 
 // TagImage godoc

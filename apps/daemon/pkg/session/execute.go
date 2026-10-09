@@ -13,11 +13,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/daytonaio/daemon/internal/util"
+	"github.com/cognifyi/cogbox/daemon/internal/util"
 	"github.com/google/uuid"
 
-	common_errors "github.com/daytonaio/common-go/pkg/errors"
-	"github.com/daytonaio/common-go/pkg/log"
+	common_errors "github.com/cognifyi/cogbox/common-go/pkg/errors"
+	"github.com/cognifyi/cogbox/common-go/pkg/log"
 )
 
 func (s *SessionService) Execute(sessionId, cmdId, cmd string, async, isCombinedOutput, skipServerDemux, suppressInputEcho bool) (*SessionExecute, error) {

@@ -6,7 +6,7 @@ package session
 import (
 	"errors"
 
-	common_errors "github.com/daytonaio/common-go/pkg/errors"
+	common_errors "github.com/cognifyi/cogbox/common-go/pkg/errors"
 )
 
 func (s *SessionService) Get(sessionId string) (*Session, error) {

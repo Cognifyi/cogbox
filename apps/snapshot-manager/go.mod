@@ -1,4 +1,4 @@
-module github.com/daytonaio/snapshot-manager
+module github.com/cognifyi/cogbox/snapshot-manager
 
 go 1.25.0
 

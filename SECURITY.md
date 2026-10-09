@@ -8,7 +8,7 @@ At Daytona, we take security seriously. If you believe you have found a security
 
 Instead, please email us at: **security@daytona.io**
 
-You can also report vulnerabilities privately through [GitHub's security advisory feature](https://github.com/daytonaio/daytona/security/advisories/new).
+You can also report vulnerabilities privately through [GitHub's security advisory feature](https://github.com/cognifyi/cogbox/security/advisories/new).
 
 Please include:
 

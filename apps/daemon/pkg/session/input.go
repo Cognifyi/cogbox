@@ -9,8 +9,8 @@ import (
 	"os"
 	"strings"
 
-	common_errors "github.com/daytonaio/common-go/pkg/errors"
-	"github.com/daytonaio/common-go/pkg/log"
+	common_errors "github.com/cognifyi/cogbox/common-go/pkg/errors"
+	"github.com/cognifyi/cogbox/common-go/pkg/log"
 )
 
 // SendInput sends data to the session's stdin for a specific running command

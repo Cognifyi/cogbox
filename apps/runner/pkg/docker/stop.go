@@ -7,8 +7,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/daytonaio/common-go/pkg/utils"
-	"github.com/daytonaio/runner/pkg/models/enums"
+	"github.com/cognifyi/cogbox/common-go/pkg/utils"
+	"github.com/cognifyi/cogbox/runner/pkg/models/enums"
 	"github.com/docker/docker/api/types/container"
 )
 

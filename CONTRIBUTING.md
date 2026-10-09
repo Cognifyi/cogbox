@@ -21,7 +21,7 @@ to [info@daytona.io](mailto:info@daytona.io).
 
 ## Provide Feedback
 
-You might find things that can be improved while you are using Daytona. You can help by [submitting an issue](https://github.com/daytonaio/daytona/issues/new) when:
+You might find things that can be improved while you are using Daytona. You can help by [submitting an issue](https://github.com/cognifyi/cogbox/issues/new) when:
 
 - A new feature or an enhancement to an existing feature will improve the utility or usability of Daytona.
 - Daytona crashes, or you encounter a bug that can only be resolved by restarting Daytona.
@@ -60,7 +60,7 @@ Follow the following steps to ensure your contribution goes smoothly.
 1. Read and follow the steps outlined in the [Daytona Contributing Policy](README.md#contributing).
 1. Configure your development environment by either following the guide below.
 1. [Fork](https://help.github.com/articles/working-with-forks/) the GitHub Repository allowing you to make the changes in your own copy of the repository.
-1. Create a [GitHub issue](https://github.com/daytonaio/daytona/issues) if one doesn't exist already.
+1. Create a [GitHub issue](https://github.com/cognifyi/cogbox/issues) if one doesn't exist already.
 1. [Prepare your changes](./PREPARING_YOUR_CHANGES.md) and ensure your commits are descriptive. The document contains an optional commit template, if desired.
 1. Ensure that you sign off on all your commits to comply with the DCO v1.1. We have more details in [Prepare your changes](./PREPARING_YOUR_CHANGES.md).
 1. Ensure to generate new docs after making command related changes, by running `./hack/generate-cli-docs.sh` in the daytona root directory.

@@ -146,7 +146,7 @@ Clone, list branches, and add files to the sandbox.
 ```ruby
 # Basic clone
 sandbox.git.clone(
-  url: 'https://github.com/daytonaio/daytona.git',
+  url: 'https://github.com/cognifyi/cogbox.git',
   path: 'workspace/repo'
 )
 

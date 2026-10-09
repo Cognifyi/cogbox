@@ -9,9 +9,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/daytonaio/runner/cmd/runner/config"
-	"github.com/daytonaio/runner/pkg/api/dto"
-	"github.com/daytonaio/runner/pkg/common"
+	"github.com/cognifyi/cogbox/runner/cmd/runner/config"
+	"github.com/cognifyi/cogbox/runner/pkg/api/dto"
+	"github.com/cognifyi/cogbox/runner/pkg/common"
 	"github.com/docker/docker/api/types/image"
 	"github.com/docker/docker/api/types/network"
 	"github.com/docker/docker/api/types/strslice"

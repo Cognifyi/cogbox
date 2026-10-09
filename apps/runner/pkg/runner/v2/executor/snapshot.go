@@ -8,9 +8,9 @@ package executor
 import (
 	"context"
 
-	apiclient "github.com/daytonaio/daytona/libs/api-client-go"
-	"github.com/daytonaio/runner/cmd/runner/config"
-	"github.com/daytonaio/runner/pkg/api/dto"
+	apiclient "github.com/cognifyi/cogbox/libs/api-client-go"
+	"github.com/cognifyi/cogbox/runner/cmd/runner/config"
+	"github.com/cognifyi/cogbox/runner/pkg/api/dto"
 )
 
 func (e *Executor) buildSnapshot(ctx context.Context, job *apiclient.Job) (any, error) {

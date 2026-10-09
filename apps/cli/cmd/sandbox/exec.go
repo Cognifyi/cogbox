@@ -9,9 +9,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/daytonaio/daytona/cli/apiclient"
-	"github.com/daytonaio/daytona/cli/cmd/common"
-	"github.com/daytonaio/daytona/cli/toolbox"
+	"github.com/cognifyi/cogbox/cli/apiclient"
+	"github.com/cognifyi/cogbox/cli/cmd/common"
+	"github.com/cognifyi/cogbox/cli/toolbox"
 	"github.com/spf13/cobra"
 )
 

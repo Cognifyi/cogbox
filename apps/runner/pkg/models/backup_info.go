@@ -4,7 +4,7 @@
 package models
 
 import (
-	"github.com/daytonaio/runner/pkg/models/enums"
+	"github.com/cognifyi/cogbox/runner/pkg/models/enums"
 )
 
 type BackupInfo struct {

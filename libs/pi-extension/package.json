@@ -5,12 +5,12 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daytonaio/daytona.git"
+    "url": "git+https://github.com/cognifyi/cogbox.git"
   },
   "author": "Daytona Platforms Inc.",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/daytonaio/daytona/issues"
+    "url": "https://github.com/cognifyi/cogbox/issues"
   },
   "keywords": [
     "pi-package",

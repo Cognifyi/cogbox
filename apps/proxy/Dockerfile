@@ -35,7 +35,7 @@ COPY libs/api-client-go/go.mod libs/api-client-go/go.sum libs/api-client-go/
 RUN head -1 go.work > go.work.tmp && printf '\nuse (\n\t./apps/proxy\n\t./libs/common-go\n\t./libs/api-client-go\n)\n' >> go.work.tmp && mv go.work.tmp go.work
 
 ENV NX_DAEMON=false
-ENV GONOSUMDB=github.com/daytonaio/daytona
+ENV GONOSUMDB=github.com/cognifyi/cogbox
 
 RUN go -C apps/proxy mod download && go -C libs/common-go mod download && go -C libs/api-client-go mod download
 

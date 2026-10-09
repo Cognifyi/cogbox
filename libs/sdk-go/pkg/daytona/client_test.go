@@ -13,9 +13,9 @@ import (
 	"testing"
 	"time"
 
-	apiclient "github.com/daytonaio/daytona/libs/api-client-go"
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/options"
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/types"
+	apiclient "github.com/cognifyi/cogbox/libs/api-client-go"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/options"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

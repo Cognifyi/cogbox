@@ -95,13 +95,13 @@ fi
 # Build the binary
 echo "Building Daytona CLI with version: $DAYTONA_VERSION"
 go build \
-    -ldflags "-X 'github.com/daytonaio/daytona/cli/internal.Version=${DAYTONA_VERSION}' \
-    -X 'github.com/daytonaio/daytona/cli/internal.DaytonaApiUrl=${DAYTONA_API_URL}' \
-    -X 'github.com/daytonaio/daytona/cli/internal.Auth0Domain=${DAYTONA_AUTH0_DOMAIN}' \
-    -X 'github.com/daytonaio/daytona/cli/internal.Auth0ClientId=${DAYTONA_AUTH0_CLIENT_ID}' \
-    -X 'github.com/daytonaio/daytona/cli/internal.Auth0ClientSecret=${DAYTONA_AUTH0_CLIENT_SECRET}' \
-    -X 'github.com/daytonaio/daytona/cli/internal.Auth0CallbackPort=${DAYTONA_AUTH0_CALLBACK_PORT}' \
-    -X 'github.com/daytonaio/daytona/cli/internal.Auth0Audience=${DAYTONA_AUTH0_AUDIENCE}'" \
+    -ldflags "-X 'github.com/cognifyi/cogbox/cli/internal.Version=${DAYTONA_VERSION}' \
+    -X 'github.com/cognifyi/cogbox/cli/internal.DaytonaApiUrl=${DAYTONA_API_URL}' \
+    -X 'github.com/cognifyi/cogbox/cli/internal.Auth0Domain=${DAYTONA_AUTH0_DOMAIN}' \
+    -X 'github.com/cognifyi/cogbox/cli/internal.Auth0ClientId=${DAYTONA_AUTH0_CLIENT_ID}' \
+    -X 'github.com/cognifyi/cogbox/cli/internal.Auth0ClientSecret=${DAYTONA_AUTH0_CLIENT_SECRET}' \
+    -X 'github.com/cognifyi/cogbox/cli/internal.Auth0CallbackPort=${DAYTONA_AUTH0_CALLBACK_PORT}' \
+    -X 'github.com/cognifyi/cogbox/cli/internal.Auth0Audience=${DAYTONA_AUTH0_AUDIENCE}'" \
     -o "${DIST_DIR}/dist/apps/cli/${OUTPUT_FILE}" main.go
 
 echo "Build complete: ${DIST_DIR}/dist/apps/cli/${OUTPUT_FILE}"

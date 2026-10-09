@@ -15,10 +15,10 @@ import (
 	"syscall"
 	"time"
 
-	common_errors "github.com/daytonaio/common-go/pkg/errors"
+	common_errors "github.com/cognifyi/cogbox/common-go/pkg/errors"
 
-	"github.com/daytonaio/daemon/pkg/childreap"
-	"github.com/daytonaio/daemon/pkg/common"
+	"github.com/cognifyi/cogbox/daemon/pkg/childreap"
+	"github.com/cognifyi/cogbox/daemon/pkg/common"
 	"github.com/gin-gonic/gin"
 )
 

@@ -6,10 +6,10 @@ package daytona
 import (
 	"context"
 
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/errors"
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/options"
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/types"
-	toolbox "github.com/daytonaio/daytona/libs/toolbox-api-client-go"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/errors"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/options"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/types"
+	toolbox "github.com/cognifyi/cogbox/libs/toolbox-api-client-go"
 )
 
 // GitService provides Git operations for a sandbox.

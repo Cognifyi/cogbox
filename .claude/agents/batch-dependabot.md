@@ -76,8 +76,8 @@ Compare each version against what's on the `main` branch. If any module shows a 
 
 Pay special attention to these internal dependencies:
 
-- `github.com/daytonaio/daytona/libs/api-client-go`
-- `github.com/daytonaio/daytona/libs/toolbox-api-client-go`
+- `github.com/cognifyi/cogbox/libs/api-client-go`
+- `github.com/cognifyi/cogbox/libs/toolbox-api-client-go`
 
 ### 3b. Check for breaking API changes
 

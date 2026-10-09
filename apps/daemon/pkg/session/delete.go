@@ -10,8 +10,8 @@ import (
 	"syscall"
 	"time"
 
-	common_errors "github.com/daytonaio/common-go/pkg/errors"
-	"github.com/daytonaio/daemon/pkg/childreap"
+	common_errors "github.com/cognifyi/cogbox/common-go/pkg/errors"
+	"github.com/cognifyi/cogbox/daemon/pkg/childreap"
 	"github.com/shirou/gopsutil/v4/process"
 )
 

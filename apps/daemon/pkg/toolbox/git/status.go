@@ -7,8 +7,8 @@ import (
 	"errors"
 	"net/http"
 
-	common_errors "github.com/daytonaio/common-go/pkg/errors"
-	"github.com/daytonaio/daemon/pkg/git"
+	common_errors "github.com/cognifyi/cogbox/common-go/pkg/errors"
+	"github.com/cognifyi/cogbox/daemon/pkg/git"
 	"github.com/gin-gonic/gin"
 )
 

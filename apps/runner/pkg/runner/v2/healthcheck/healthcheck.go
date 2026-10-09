@@ -11,11 +11,11 @@ import (
 	"log/slog"
 	"time"
 
-	apiclient "github.com/daytonaio/daytona/libs/api-client-go"
-	"github.com/daytonaio/runner/internal"
-	"github.com/daytonaio/runner/internal/metrics"
-	runnerapiclient "github.com/daytonaio/runner/pkg/apiclient"
-	"github.com/daytonaio/runner/pkg/docker"
+	apiclient "github.com/cognifyi/cogbox/libs/api-client-go"
+	"github.com/cognifyi/cogbox/runner/internal"
+	"github.com/cognifyi/cogbox/runner/internal/metrics"
+	runnerapiclient "github.com/cognifyi/cogbox/runner/pkg/apiclient"
+	"github.com/cognifyi/cogbox/runner/pkg/docker"
 )
 
 type HealthcheckServiceConfig struct {

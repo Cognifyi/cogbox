@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/daytonaio/daemon/internal"
+	"github.com/cognifyi/cogbox/daemon/internal"
 	"github.com/gin-gonic/gin"
 )
 

@@ -11,8 +11,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/daytonaio/daytona/cli/cmd"
-	"github.com/daytonaio/daytona/cli/internal"
+	"github.com/cognifyi/cogbox/cli/cmd"
+	"github.com/cognifyi/cogbox/cli/internal"
 )
 
 const DAYTONA_API_URL_ENV_VAR = "DAYTONA_API_URL"

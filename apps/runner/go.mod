@@ -1,11 +1,11 @@
-module github.com/daytonaio/runner
+module github.com/cognifyi/cogbox/runner
 
 go 1.25.5
 
 require (
+	github.com/cognifyi/cogbox/libs/api-client-go v0.149.0
 	github.com/containerd/errdefs v1.0.0
 	github.com/coreos/go-iptables v0.8.0
-	github.com/daytonaio/daytona/libs/api-client-go v0.149.0
 	github.com/docker/cli v29.2.1+incompatible
 	github.com/docker/docker v28.5.2+incompatible
 	github.com/docker/go-units v0.5.0
@@ -160,3 +160,5 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	gotest.tools/v3 v3.5.2 // indirect
 )
+
+replace github.com/cognifyi/cogbox/libs/api-client-go => ../../libs/api-client-go

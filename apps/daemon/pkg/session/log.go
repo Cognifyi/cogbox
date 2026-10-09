@@ -13,11 +13,11 @@ import (
 	"os"
 	"time"
 
-	"github.com/daytonaio/daemon/internal/util"
+	"github.com/cognifyi/cogbox/daemon/internal/util"
 	"github.com/gorilla/websocket"
 
-	common_errors "github.com/daytonaio/common-go/pkg/errors"
-	"github.com/daytonaio/common-go/pkg/log"
+	common_errors "github.com/cognifyi/cogbox/common-go/pkg/errors"
+	"github.com/cognifyi/cogbox/common-go/pkg/log"
 )
 
 type FetchLogsOptions struct {

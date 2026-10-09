@@ -8,9 +8,9 @@ import (
 	"log"
 	"time"
 
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/daytona"
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/options"
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/types"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/daytona"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/options"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/types"
 )
 
 func main() {
@@ -56,7 +56,7 @@ func main() {
 	}
 
 	// Clone a public repository
-	repoURL := "https://github.com/daytonaio/daytona.git"
+	repoURL := "https://github.com/cognifyi/cogbox.git"
 	log.Printf("Cloning %s...\n", repoURL)
 	if err := sandbox.Git.Clone(ctx, repoURL, repoPath); err != nil {
 		log.Fatalf("Failed to clone repository: %v", err)

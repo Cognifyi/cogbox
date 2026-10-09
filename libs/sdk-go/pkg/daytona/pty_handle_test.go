@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/types"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/types"
 	"github.com/gorilla/websocket"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

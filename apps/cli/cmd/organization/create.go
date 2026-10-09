@@ -8,11 +8,11 @@ import (
 	"fmt"
 
 	"github.com/charmbracelet/huh"
-	apiclient_cli "github.com/daytonaio/daytona/cli/apiclient"
-	"github.com/daytonaio/daytona/cli/config"
-	"github.com/daytonaio/daytona/cli/views/common"
-	"github.com/daytonaio/daytona/cli/views/organization"
-	apiclient "github.com/daytonaio/daytona/libs/api-client-go"
+	apiclient_cli "github.com/cognifyi/cogbox/cli/apiclient"
+	"github.com/cognifyi/cogbox/cli/config"
+	"github.com/cognifyi/cogbox/cli/views/common"
+	"github.com/cognifyi/cogbox/cli/views/organization"
+	apiclient "github.com/cognifyi/cogbox/libs/api-client-go"
 	"github.com/spf13/cobra"
 )
 

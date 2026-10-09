@@ -10,10 +10,10 @@ import (
 	"os"
 	"time"
 
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/errors"
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/options"
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/types"
-	"github.com/daytonaio/daytona/libs/toolbox-api-client-go"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/errors"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/options"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/types"
+	"github.com/cognifyi/cogbox/libs/toolbox-api-client-go"
 )
 
 // FileSystemService provides file system operations for a sandbox.

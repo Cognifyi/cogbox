@@ -5,8 +5,8 @@ package organization
 
 import (
 	"github.com/charmbracelet/huh"
-	"github.com/daytonaio/daytona/cli/views/common"
-	apiclient "github.com/daytonaio/daytona/libs/api-client-go"
+	"github.com/cognifyi/cogbox/cli/views/common"
+	apiclient "github.com/cognifyi/cogbox/libs/api-client-go"
 )
 
 func GetOrganizationIdFromPrompt(organizationList []apiclient.Organization) (*apiclient.Organization, error) {

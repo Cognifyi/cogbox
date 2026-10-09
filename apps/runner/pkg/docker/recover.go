@@ -7,9 +7,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/daytonaio/runner/pkg/api/dto"
-	"github.com/daytonaio/runner/pkg/common"
-	"github.com/daytonaio/runner/pkg/models"
+	"github.com/cognifyi/cogbox/runner/pkg/api/dto"
+	"github.com/cognifyi/cogbox/runner/pkg/common"
+	"github.com/cognifyi/cogbox/runner/pkg/models"
 )
 
 func (d *DockerClient) RecoverSandbox(ctx context.Context, sandboxId string, recoverDto dto.RecoverSandboxDTO) error {

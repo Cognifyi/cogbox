@@ -9,13 +9,13 @@ import (
 	"log/slog"
 	"time"
 
-	"github.com/daytonaio/runner/internal/metrics"
-	"github.com/daytonaio/runner/pkg/cache"
-	"github.com/daytonaio/runner/pkg/docker"
-	"github.com/daytonaio/runner/pkg/models"
-	"github.com/daytonaio/runner/pkg/netrules"
-	"github.com/daytonaio/runner/pkg/services"
-	"github.com/daytonaio/runner/pkg/sshgateway"
+	"github.com/cognifyi/cogbox/runner/internal/metrics"
+	"github.com/cognifyi/cogbox/runner/pkg/cache"
+	"github.com/cognifyi/cogbox/runner/pkg/docker"
+	"github.com/cognifyi/cogbox/runner/pkg/models"
+	"github.com/cognifyi/cogbox/runner/pkg/netrules"
+	"github.com/cognifyi/cogbox/runner/pkg/services"
+	"github.com/cognifyi/cogbox/runner/pkg/sshgateway"
 )
 
 type RunnerInstanceConfig struct {

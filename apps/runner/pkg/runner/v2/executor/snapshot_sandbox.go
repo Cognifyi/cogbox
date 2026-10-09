@@ -9,8 +9,8 @@ import (
 	"context"
 	"fmt"
 
-	apiclient "github.com/daytonaio/daytona/libs/api-client-go"
-	"github.com/daytonaio/runner/pkg/common"
+	apiclient "github.com/cognifyi/cogbox/libs/api-client-go"
+	"github.com/cognifyi/cogbox/runner/pkg/common"
 )
 
 type snapshotSandboxJobResult struct {

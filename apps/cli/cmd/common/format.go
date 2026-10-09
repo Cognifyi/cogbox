@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/daytonaio/daytona/cli/internal"
+	"github.com/cognifyi/cogbox/cli/internal"
 	"github.com/spf13/cobra"
 	"gopkg.in/yaml.v2"
 )

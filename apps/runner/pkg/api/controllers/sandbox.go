@@ -8,13 +8,13 @@ import (
 	"log/slog"
 	"net/http"
 
-	"github.com/daytonaio/runner/pkg/api/dto"
-	"github.com/daytonaio/runner/pkg/common"
-	"github.com/daytonaio/runner/pkg/models/enums"
-	"github.com/daytonaio/runner/pkg/runner"
+	"github.com/cognifyi/cogbox/runner/pkg/api/dto"
+	"github.com/cognifyi/cogbox/runner/pkg/common"
+	"github.com/cognifyi/cogbox/runner/pkg/models/enums"
+	"github.com/cognifyi/cogbox/runner/pkg/runner"
 	"github.com/gin-gonic/gin"
 
-	common_errors "github.com/daytonaio/common-go/pkg/errors"
+	common_errors "github.com/cognifyi/cogbox/common-go/pkg/errors"
 )
 
 var errInvalidSnapshotFromSandboxRegistry = errors.New("registry is required for sandbox snapshot")

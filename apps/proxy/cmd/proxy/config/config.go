@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/daytonaio/common-go/pkg/cache"
-	"github.com/daytonaio/common-go/pkg/utils"
-	apiclient "github.com/daytonaio/daytona/libs/api-client-go"
+	"github.com/cognifyi/cogbox/common-go/pkg/cache"
+	"github.com/cognifyi/cogbox/common-go/pkg/utils"
+	apiclient "github.com/cognifyi/cogbox/libs/api-client-go"
 	"github.com/go-playground/validator/v10"
 	"github.com/joho/godotenv"
 	"github.com/kelseyhightower/envconfig"

@@ -18,11 +18,11 @@ import (
 	"go.opentelemetry.io/otel/propagation"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/daytonaio/common-go/pkg/utils"
-	apiclient "github.com/daytonaio/daytona/libs/api-client-go"
-	"github.com/daytonaio/runner/internal/metrics"
-	runnerapiclient "github.com/daytonaio/runner/pkg/apiclient"
-	"github.com/daytonaio/runner/pkg/docker"
+	"github.com/cognifyi/cogbox/common-go/pkg/utils"
+	apiclient "github.com/cognifyi/cogbox/libs/api-client-go"
+	"github.com/cognifyi/cogbox/runner/internal/metrics"
+	runnerapiclient "github.com/cognifyi/cogbox/runner/pkg/apiclient"
+	"github.com/cognifyi/cogbox/runner/pkg/docker"
 )
 
 type ExecutorConfig struct {

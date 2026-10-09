@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	common_errors "github.com/daytonaio/common-go/pkg/errors"
+	common_errors "github.com/cognifyi/cogbox/common-go/pkg/errors"
 	"github.com/google/uuid"
 )
 

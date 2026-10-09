@@ -10,9 +10,9 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/daytonaio/daemon/pkg/childreap"
-	"github.com/daytonaio/daemon/pkg/common"
-	"github.com/daytonaio/daemon/pkg/ssh/config"
+	"github.com/cognifyi/cogbox/daemon/pkg/childreap"
+	"github.com/cognifyi/cogbox/daemon/pkg/common"
+	"github.com/cognifyi/cogbox/daemon/pkg/ssh/config"
 	"github.com/gliderlabs/ssh"
 	"github.com/pkg/sftp"
 	"golang.org/x/sys/unix"

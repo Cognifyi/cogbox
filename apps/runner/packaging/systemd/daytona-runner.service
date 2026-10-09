@@ -1,6 +1,6 @@
 [Unit]
 Description=Daytona Runner Service
-Documentation=https://github.com/daytonaio/daytona
+Documentation=https://github.com/cognifyi/cogbox
 After=network.target
 Wants=network-online.target
 

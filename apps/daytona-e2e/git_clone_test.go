@@ -23,7 +23,7 @@ import (
 // Not particularly small — daytonaio/daytona is a real-world-sized repo —
 // the goal is end-to-end coverage, not a micro-benchmark. Memory-envelope
 // behavior is covered by the daemon unit tests.
-const gitCloneRepoURL = "https://github.com/daytonaio/daytona.git"
+const gitCloneRepoURL = "https://github.com/cognifyi/cogbox.git"
 
 // cloneHTTPTimeout is the overall budget for the POST /git/clone request.
 // Generous because the repo is a few hundred MB and the sandbox runner

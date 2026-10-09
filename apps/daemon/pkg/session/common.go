@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/daytonaio/daemon/internal/util"
+	"github.com/cognifyi/cogbox/daemon/internal/util"
 )
 
 func isDevVersion(version string) bool {

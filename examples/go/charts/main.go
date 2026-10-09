@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/daytona"
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/options"
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/types"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/daytona"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/options"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/types"
 )
 
 const code = `
