@@ -1,4 +1,4 @@
-ARG SANDBOX_IMAGE=daytonaio/sandbox:latest
+ARG SANDBOX_IMAGE=cognifyi/sandbox:latest
 FROM ${SANDBOX_IMAGE}
 USER root
 
