@@ -7,6 +7,14 @@ on:
         description: Version to release (start with "v")
         required: true
         default: 'v0.0.0-dev'
+      first-release:
+        description: Use --first-release flag (for initial releases)
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
 
 permissions: {}
 
@@ -97,7 +105,14 @@ jobs:
           }' > apps/daytona-e2e/package.json
 
       - name: Create release
-        run: yarn nx release "$VERSION" --skip-publish --verbose
+        env:
+          FIRST_RELEASE: ${{ inputs['first-release'] }}
+        run: |
+          RELEASE_FLAGS="--skip-publish --verbose"
+          if [ "$FIRST_RELEASE" = "true" ]; then
+            RELEASE_FLAGS="$RELEASE_FLAGS --first-release"
+          fi
+          yarn nx release "$VERSION" $RELEASE_FLAGS
 
       - name: Cleanup credentials
         if: always()
