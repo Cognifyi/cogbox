@@ -3,7 +3,7 @@ module github.com/cognifyi/cogbox/common-go
 go 1.25.4
 
 require (
-	github.com/cognifyi/cogbox/libs/api-client-go v0.152.1
+	github.com/cognifyi/cogbox/libs/api-client-go v0.190.1
 	github.com/gin-gonic/gin v1.10.1
 	github.com/jellydator/ttlcache/v3 v3.4.0
 	github.com/redis/go-redis/v9 v9.10.0
@@ -73,5 +73,3 @@ require (
 	google.golang.org/protobuf v1.36.11 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
-
-replace github.com/cognifyi/cogbox/libs/api-client-go => ../api-client-go
