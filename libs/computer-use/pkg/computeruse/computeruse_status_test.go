@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	toolbox "github.com/daytonaio/daemon/pkg/toolbox/computeruse"
+	toolbox "github.com/cognifyi/cogbox/daemon/pkg/toolbox/computeruse"
 )
 
 func TestAtspiStatusUsesA11yHealth(t *testing.T) {

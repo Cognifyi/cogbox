@@ -18,7 +18,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/credentials"
 	"github.com/aws/aws-sdk-go-v2/service/s3"
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/errors"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/errors"
 )
 
 // objectStorageConfig holds configuration for S3-compatible object storage.

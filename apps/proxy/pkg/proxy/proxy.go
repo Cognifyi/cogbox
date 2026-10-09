@@ -16,16 +16,16 @@ import (
 	"sync"
 	"time"
 
-	apiclient "github.com/daytonaio/daytona/libs/api-client-go"
-	"github.com/daytonaio/proxy/cmd/proxy/config"
-	"github.com/daytonaio/proxy/internal"
+	apiclient "github.com/cognifyi/cogbox/libs/api-client-go"
+	"github.com/cognifyi/cogbox/proxy/cmd/proxy/config"
+	"github.com/cognifyi/cogbox/proxy/internal"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/securecookie"
 
-	common_cache "github.com/daytonaio/common-go/pkg/cache"
-	common_errors "github.com/daytonaio/common-go/pkg/errors"
-	common_proxy "github.com/daytonaio/common-go/pkg/proxy"
+	common_cache "github.com/cognifyi/cogbox/common-go/pkg/cache"
+	common_errors "github.com/cognifyi/cogbox/common-go/pkg/errors"
+	common_proxy "github.com/cognifyi/cogbox/common-go/pkg/proxy"
 
 	log "github.com/sirupsen/logrus"
 )

@@ -4,7 +4,7 @@
 package snapshot
 
 import (
-	"github.com/daytonaio/daytona/cli/internal"
+	"github.com/cognifyi/cogbox/cli/internal"
 	"github.com/spf13/cobra"
 )
 

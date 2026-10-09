@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/daytonaio/daytona/cli/views/common"
-	"github.com/daytonaio/daytona/cli/views/util"
-	apiclient "github.com/daytonaio/daytona/libs/api-client-go"
+	"github.com/cognifyi/cogbox/cli/views/common"
+	"github.com/cognifyi/cogbox/cli/views/util"
+	apiclient "github.com/cognifyi/cogbox/libs/api-client-go"
 )
 
 type RowData struct {

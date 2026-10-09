@@ -378,7 +378,7 @@ step_clone() {
     # This makes re-runs non-destructive and lets users pre-stage the repo
     # (e.g. for testing local changes) without needing to edit this function.
     [ -d "$REPO_DIR/.git" ] && return 0
-    git clone https://github.com/daytonaio/daytona.git "$REPO_DIR"
+    git clone https://github.com/cognifyi/cogbox/daytona.git "$REPO_DIR"
 }
 
 step_secrets() {

@@ -10,14 +10,14 @@ Gem::Specification.new do |spec|
 
   spec.summary = 'Ruby SDK for Daytona'
   spec.description = 'High-level Ruby SDK for Daytona: sandboxes, git, filesystem, LSP, process, and object storage.'
-  spec.homepage = 'https://github.com/daytonaio/daytona'
+  spec.homepage = 'https://github.com/cognifyi/cogbox/daytona'
   spec.required_ruby_version = '>= 3.2.0'
 
   spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
   spec.metadata['homepage_uri'] = spec.homepage
-  spec.metadata['source_code_uri'] = 'https://github.com/daytonaio/daytona'
-  spec.metadata['changelog_uri'] = 'https://github.com/daytonaio/daytona/releases'
+  spec.metadata['source_code_uri'] = 'https://github.com/cognifyi/cogbox/daytona'
+  spec.metadata['changelog_uri'] = 'https://github.com/cognifyi/cogbox/releases'
   spec.metadata['rubygems_mfa_required'] = 'true'
 
   # Specify which files should be added to the gem when it is released.

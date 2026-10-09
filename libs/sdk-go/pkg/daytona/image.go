@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/options"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/options"
 )
 
 // DockerImage provides a fluent interface for building Docker images declaratively.

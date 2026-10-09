@@ -11,7 +11,7 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/daytonaio/daemon/pkg/gitprovider"
+	"github.com/cognifyi/cogbox/daemon/pkg/gitprovider"
 	"github.com/stretchr/testify/require"
 )
 

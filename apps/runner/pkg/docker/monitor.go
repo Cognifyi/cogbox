@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/daytonaio/runner/pkg/netrules"
+	"github.com/cognifyi/cogbox/runner/pkg/netrules"
 	"github.com/docker/docker/api/types/events"
 	"github.com/docker/docker/api/types/filters"
 	"github.com/docker/docker/client"

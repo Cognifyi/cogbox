@@ -11,10 +11,10 @@ import (
 	"os/exec"
 	"syscall"
 
-	"github.com/daytonaio/daemon/pkg/common"
+	"github.com/cognifyi/cogbox/daemon/pkg/common"
 	cmap "github.com/orcaman/concurrent-map/v2"
 
-	common_errors "github.com/daytonaio/common-go/pkg/errors"
+	common_errors "github.com/cognifyi/cogbox/common-go/pkg/errors"
 )
 
 func (s *SessionService) Create(sessionId string, isLegacy bool) error {

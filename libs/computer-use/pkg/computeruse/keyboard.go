@@ -9,7 +9,7 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/daytonaio/daemon/pkg/toolbox/computeruse"
+	"github.com/cognifyi/cogbox/daemon/pkg/toolbox/computeruse"
 	"github.com/go-vgo/robotgo"
 )
 

@@ -10,10 +10,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/daytonaio/daytona/cli/auth"
-	"github.com/daytonaio/daytona/cli/config"
-	"github.com/daytonaio/daytona/cli/internal"
-	apiclient "github.com/daytonaio/daytona/libs/api-client-go"
+	"github.com/cognifyi/cogbox/cli/auth"
+	"github.com/cognifyi/cogbox/cli/config"
+	"github.com/cognifyi/cogbox/cli/internal"
+	apiclient "github.com/cognifyi/cogbox/libs/api-client-go"
 
 	log "github.com/sirupsen/logrus"
 )
@@ -63,7 +63,7 @@ func checkVersionsMismatch(res *http.Response) {
 	}
 
 	versionMismatchWarningOnce.Do(func() {
-		log.Warn(fmt.Sprintf("Version mismatch: Daytona CLI is on v%s and API is on v%s.\nMake sure the versions are aligned using 'brew upgrade daytonaio/cli/daytona' or by downloading the latest version from https://github.com/daytonaio/daytona/releases.", cliVersion, apiVersion))
+		log.Warn(fmt.Sprintf("Version mismatch: Daytona CLI is on v%s and API is on v%s.\nMake sure the versions are aligned by downloading the latest version from https://github.com/cognifyi/cogbox/releases.", cliVersion, apiVersion))
 	})
 }
 

@@ -9,11 +9,11 @@ import (
 	"strings"
 	"time"
 
+	"github.com/cognifyi/cogbox/runner/internal/util"
 	"github.com/containerd/errdefs"
-	"github.com/daytonaio/runner/internal/util"
 	"github.com/gin-gonic/gin"
 
-	common_errors "github.com/daytonaio/common-go/pkg/errors"
+	common_errors "github.com/cognifyi/cogbox/common-go/pkg/errors"
 )
 
 func HandlePossibleDockerError(ctx *gin.Context, err error) common_errors.ErrorResponse {

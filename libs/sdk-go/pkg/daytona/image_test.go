@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/options"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/options"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

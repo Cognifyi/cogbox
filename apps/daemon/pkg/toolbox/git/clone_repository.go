@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"net/http"
 
-	common_errors "github.com/daytonaio/common-go/pkg/errors"
-	"github.com/daytonaio/daemon/pkg/git"
-	"github.com/daytonaio/daemon/pkg/gitprovider"
+	common_errors "github.com/cognifyi/cogbox/common-go/pkg/errors"
+	"github.com/cognifyi/cogbox/daemon/pkg/git"
+	"github.com/cognifyi/cogbox/daemon/pkg/gitprovider"
 	"github.com/gin-gonic/gin"
 	go_git_http "github.com/go-git/go-git/v5/plumbing/transport/http"
 )

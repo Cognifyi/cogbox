@@ -4,9 +4,9 @@
 package auth
 
 import (
-	"github.com/daytonaio/daytona/cli/config"
-	"github.com/daytonaio/daytona/cli/internal"
-	"github.com/daytonaio/daytona/cli/views/common"
+	"github.com/cognifyi/cogbox/cli/config"
+	"github.com/cognifyi/cogbox/cli/internal"
+	"github.com/cognifyi/cogbox/cli/views/common"
 	"github.com/spf13/cobra"
 )
 

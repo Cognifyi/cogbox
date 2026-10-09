@@ -8,14 +8,14 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/daytonaio/daytona/cli/cmd"
-	"github.com/daytonaio/daytona/cli/cmd/auth"
-	"github.com/daytonaio/daytona/cli/cmd/mcp"
-	"github.com/daytonaio/daytona/cli/cmd/organization"
-	"github.com/daytonaio/daytona/cli/cmd/sandbox"
-	"github.com/daytonaio/daytona/cli/cmd/snapshot"
-	"github.com/daytonaio/daytona/cli/cmd/volume"
-	"github.com/daytonaio/daytona/cli/internal"
+	"github.com/cognifyi/cogbox/cli/cmd"
+	"github.com/cognifyi/cogbox/cli/cmd/auth"
+	"github.com/cognifyi/cogbox/cli/cmd/mcp"
+	"github.com/cognifyi/cogbox/cli/cmd/organization"
+	"github.com/cognifyi/cogbox/cli/cmd/sandbox"
+	"github.com/cognifyi/cogbox/cli/cmd/snapshot"
+	"github.com/cognifyi/cogbox/cli/cmd/volume"
+	"github.com/cognifyi/cogbox/cli/internal"
 	"github.com/joho/godotenv"
 	"github.com/spf13/cobra"
 )

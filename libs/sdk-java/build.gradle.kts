@@ -68,7 +68,7 @@ publishing {
             pom {
                 name.set("Daytona Java SDK")
                 description.set("Official Java SDK for Daytona — secure, elastic cloud infrastructure for running AI-generated code")
-                url.set("https://github.com/daytonaio/daytona")
+                url.set("https://github.com/cognifyi/cogbox/daytona")
 
                 licenses {
                     license {
@@ -86,9 +86,9 @@ publishing {
                 }
 
                 scm {
-                    connection.set("scm:git:git://github.com/daytonaio/daytona.git")
+                    connection.set("scm:git:git://github.com/cognifyi/cogbox/daytona.git")
                     developerConnection.set("scm:git:ssh://github.com:daytonaio/daytona.git")
-                    url.set("https://github.com/daytonaio/daytona")
+                    url.set("https://github.com/cognifyi/cogbox/daytona")
                 }
             }
         }

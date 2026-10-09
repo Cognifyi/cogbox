@@ -20,10 +20,10 @@ Python 3.8+
 If the python package is hosted on a repository, you can install directly using:
 
 ```sh
-pip install git+https://github.com/daytonaio/daytona.git
+pip install git+https://github.com/cognifyi/cogbox/daytona.git
 ```
 
-(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/daytonaio/daytona.git`)
+(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/cognifyi/cogbox/daytona.git`)
 
 Then import the package:
 

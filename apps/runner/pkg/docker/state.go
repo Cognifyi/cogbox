@@ -8,10 +8,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/daytonaio/runner/pkg/models/enums"
+	"github.com/cognifyi/cogbox/runner/pkg/models/enums"
 	"github.com/docker/docker/api/types/container"
 
-	common_errors "github.com/daytonaio/common-go/pkg/errors"
+	common_errors "github.com/cognifyi/cogbox/common-go/pkg/errors"
 )
 
 func (d *DockerClient) GetSandboxState(ctx context.Context, sandboxId string) (enums.SandboxState, error) {

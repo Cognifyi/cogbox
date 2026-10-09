@@ -7,10 +7,10 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/daytonaio/runner/internal/constants"
+	"github.com/cognifyi/cogbox/runner/internal/constants"
 	"github.com/gin-gonic/gin"
 
-	common_errors "github.com/daytonaio/common-go/pkg/errors"
+	common_errors "github.com/cognifyi/cogbox/common-go/pkg/errors"
 )
 
 func AuthMiddleware(apiToken string) gin.HandlerFunc {

@@ -12,7 +12,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/daytonaio/runner/pkg/docker"
+	"github.com/cognifyi/cogbox/runner/pkg/docker"
 	"golang.org/x/crypto/ssh"
 )
 

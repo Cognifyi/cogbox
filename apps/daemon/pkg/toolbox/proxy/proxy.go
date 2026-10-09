@@ -9,8 +9,8 @@ import (
 	"net/url"
 	"strings"
 
-	common_errors "github.com/daytonaio/common-go/pkg/errors"
-	commonproxy "github.com/daytonaio/common-go/pkg/proxy"
+	common_errors "github.com/cognifyi/cogbox/common-go/pkg/errors"
+	commonproxy "github.com/cognifyi/cogbox/common-go/pkg/proxy"
 	"github.com/gin-gonic/gin"
 )
 

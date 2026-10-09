@@ -6,8 +6,8 @@ package session
 import (
 	"net/http"
 
-	"github.com/daytonaio/daemon/internal/util"
-	"github.com/daytonaio/daemon/pkg/session"
+	"github.com/cognifyi/cogbox/daemon/internal/util"
+	"github.com/cognifyi/cogbox/daemon/pkg/session"
 	"github.com/gin-gonic/gin"
 )
 

@@ -7,7 +7,7 @@ import (
 	"context"
 	"time"
 
-	common_cache "github.com/daytonaio/common-go/pkg/cache"
+	common_cache "github.com/cognifyi/cogbox/common-go/pkg/cache"
 )
 
 type SnapshotErrorCache struct {

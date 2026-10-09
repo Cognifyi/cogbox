@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/daytonaio/daemon/pkg/gitprovider"
+	"github.com/cognifyi/cogbox/daemon/pkg/gitprovider"
 	"github.com/go-git/go-git/v5/plumbing/transport/http"
 	"github.com/stretchr/testify/require"
 )
@@ -31,7 +31,7 @@ func TestBuildCloneArgs(t *testing.T) {
 		{
 			name: "https URL with branch",
 			repo: &gitprovider.GitRepository{
-				Url:    "https://github.com/daytonaio/daytona",
+				Url:    "https://github.com/cognifyi/cogbox/daytona",
 				Branch: "main",
 			},
 			workDir: "/work-dir",
@@ -40,7 +40,7 @@ func TestBuildCloneArgs(t *testing.T) {
 				"-c", "core.hooksPath=/dev/null",
 				"clone", "--single-branch", "--progress",
 				"--branch", "main",
-				"--", "https://github.com/daytonaio/daytona", "/work-dir",
+				"--", "https://github.com/cognifyi/cogbox/daytona", "/work-dir",
 			},
 		},
 		{
@@ -61,7 +61,7 @@ func TestBuildCloneArgs(t *testing.T) {
 		{
 			name: "URL without protocol gets https:// prefix",
 			repo: &gitprovider.GitRepository{
-				Url:    "github.com/daytonaio/daytona",
+				Url:    "github.com/cognifyi/cogbox/daytona",
 				Branch: "main",
 			},
 			workDir: "/work-dir",
@@ -70,20 +70,20 @@ func TestBuildCloneArgs(t *testing.T) {
 				"-c", "core.hooksPath=/dev/null",
 				"clone", "--single-branch", "--progress",
 				"--branch", "main",
-				"--", "https://github.com/daytonaio/daytona", "/work-dir",
+				"--", "https://github.com/cognifyi/cogbox/daytona", "/work-dir",
 			},
 		},
 		{
 			name: "no branch omits --branch flag",
 			repo: &gitprovider.GitRepository{
-				Url: "https://github.com/daytonaio/daytona",
+				Url: "https://github.com/cognifyi/cogbox/daytona",
 			},
 			workDir: "/work-dir",
 			expected: []string{
 				"-c", "credential.helper=",
 				"-c", "core.hooksPath=/dev/null",
 				"clone", "--single-branch", "--progress",
-				"--", "https://github.com/daytonaio/daytona", "/work-dir",
+				"--", "https://github.com/cognifyi/cogbox/daytona", "/work-dir",
 			},
 		},
 		{
@@ -125,7 +125,7 @@ func TestBuildCloneArgs_NeverEmbedsCredsInURL(t *testing.T) {
 	// user:pass@ in the URL, which persisted into .git/config. The new impl
 	// must never do that — creds flow through GIT_ASKPASS env only.
 	repo := &gitprovider.GitRepository{
-		Url:    "https://github.com/daytonaio/daytona",
+		Url:    "https://github.com/cognifyi/cogbox/daytona",
 		Branch: "main",
 	}
 	args := buildCloneArgs(repo, "/work-dir", false)

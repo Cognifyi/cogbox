@@ -11,8 +11,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/errors"
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/types"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/errors"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/types"
 	"github.com/gorilla/websocket"
 )
 

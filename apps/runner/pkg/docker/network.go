@@ -8,7 +8,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/daytonaio/runner/pkg/api/dto"
+	"github.com/cognifyi/cogbox/runner/pkg/api/dto"
 )
 
 func (d *DockerClient) UpdateNetworkSettings(ctx context.Context, containerId string, updateNetworkSettingsDto dto.UpdateNetworkSettingsDTO) error {

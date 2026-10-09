@@ -1,4 +1,4 @@
-module github.com/daytonaio/daytona/apps/daytona-e2e
+module github.com/cognifyi/cogbox/apps/daytona-e2e
 
 go 1.25.5
 

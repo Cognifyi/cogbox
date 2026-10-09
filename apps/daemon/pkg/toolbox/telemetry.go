@@ -9,9 +9,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/daytonaio/common-go/pkg/log"
-	"github.com/daytonaio/common-go/pkg/telemetry"
-	"github.com/daytonaio/daemon/internal"
+	"github.com/cognifyi/cogbox/common-go/pkg/log"
+	"github.com/cognifyi/cogbox/common-go/pkg/telemetry"
+	"github.com/cognifyi/cogbox/daemon/internal"
 )
 
 func (s *server) initTelemetry(ctx context.Context, serviceName, entrypointLogFilePath string, organizationId, regionId, snapshot *string) error {

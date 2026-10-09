@@ -14,9 +14,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/daytonaio/common-go/pkg/log"
-	"github.com/daytonaio/runner/cmd/runner/config"
-	"github.com/daytonaio/runner/pkg/api/dto"
+	"github.com/cognifyi/cogbox/common-go/pkg/log"
+	"github.com/cognifyi/cogbox/runner/cmd/runner/config"
+	"github.com/cognifyi/cogbox/runner/pkg/api/dto"
 	"github.com/google/uuid"
 )
 

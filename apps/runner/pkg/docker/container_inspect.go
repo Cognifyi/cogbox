@@ -7,8 +7,8 @@ import (
 	"context"
 	"fmt"
 
+	common_errors "github.com/cognifyi/cogbox/common-go/pkg/errors"
 	"github.com/containerd/errdefs"
-	common_errors "github.com/daytonaio/common-go/pkg/errors"
 	"github.com/docker/docker/api/types/container"
 )
 

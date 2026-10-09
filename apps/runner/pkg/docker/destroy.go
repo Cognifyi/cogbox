@@ -8,13 +8,13 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/cognifyi/cogbox/runner/pkg/common"
+	"github.com/cognifyi/cogbox/runner/pkg/models/enums"
 	"github.com/containerd/errdefs"
-	"github.com/daytonaio/runner/pkg/common"
-	"github.com/daytonaio/runner/pkg/models/enums"
 	"github.com/docker/docker/api/types/container"
 
-	common_errors "github.com/daytonaio/common-go/pkg/errors"
-	"github.com/daytonaio/common-go/pkg/utils"
+	common_errors "github.com/cognifyi/cogbox/common-go/pkg/errors"
+	"github.com/cognifyi/cogbox/common-go/pkg/utils"
 )
 
 func (d *DockerClient) Destroy(ctx context.Context, containerId string) error {

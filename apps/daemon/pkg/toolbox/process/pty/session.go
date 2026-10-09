@@ -11,9 +11,9 @@ import (
 	"os/exec"
 	"syscall"
 
+	"github.com/cognifyi/cogbox/daemon/pkg/childreap"
+	"github.com/cognifyi/cogbox/daemon/pkg/common"
 	"github.com/creack/pty"
-	"github.com/daytonaio/daemon/pkg/childreap"
-	"github.com/daytonaio/daemon/pkg/common"
 	"github.com/shirou/gopsutil/v4/process"
 )
 

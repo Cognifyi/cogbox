@@ -6,8 +6,8 @@ package types
 import (
 	"time"
 
-	apiclient "github.com/daytonaio/daytona/libs/api-client-go"
-	toolbox "github.com/daytonaio/daytona/libs/toolbox-api-client-go"
+	apiclient "github.com/cognifyi/cogbox/libs/api-client-go"
+	toolbox "github.com/cognifyi/cogbox/libs/toolbox-api-client-go"
 )
 
 const CodeToolboxLanguageLabel = "code-toolbox-language"

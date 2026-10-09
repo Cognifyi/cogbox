@@ -2,9 +2,9 @@
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/daytonaio/daytona/raw/main/assets/images/Daytona-logotype-white.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://github.com/daytonaio/daytona/raw/main/assets/images/Daytona-logotype-black.png">
-    <img alt="Daytona logo" src="https://github.com/daytonaio/daytona/raw/main/assets/images/Daytona-logotype-black.png" width="50%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/cognifyi/cogbox/raw/main/assets/images/Daytona-logotype-white.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/cognifyi/cogbox/raw/main/assets/images/Daytona-logotype-black.png">
+    <img alt="Daytona logo" src="https://github.com/cognifyi/cogbox/raw/main/assets/images/Daytona-logotype-black.png" width="50%">
   </picture>
 </div>
 
@@ -17,8 +17,8 @@
 
 <p align="center">
     <a href="https://www.daytona.io/docs"> Documentation </a>·
-    <a href="https://github.com/daytonaio/daytona/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=%F0%9F%90%9B+Bug+Report%3A+"> Report Bug </a>·
-    <a href="https://github.com/daytonaio/daytona/issues/new?assignees=&labels=enhancement&projects=&template=feature_request.md&title=%F0%9F%9A%80+Feature%3A+"> Request Feature </a>·
+    <a href="https://github.com/cognifyi/cogbox/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=%F0%9F%90%9B+Bug+Report%3A+"> Report Bug </a>·
+    <a href="https://github.com/cognifyi/cogbox/issues/new?assignees=&labels=enhancement&projects=&template=feature_request.md&title=%F0%9F%9A%80+Feature%3A+"> Request Feature </a>·
     <a href="https://go.daytona.io/slack"> Join our Slack </a>·
     <a href="https://x.com/daytonaio"> Connect on X </a>
 </p>
@@ -112,7 +112,7 @@ Standalone packages and libraries for interacting with Daytona using Ruby:
 #### Go
 
 ```bash
-go get github.com/daytonaio/daytona/libs/sdk-go
+go get github.com/cognifyi/cogbox/libs/sdk-go
 ```
 
 Standalone packages and libraries for interacting with Daytona using Go:
@@ -199,8 +199,8 @@ package main
 import (
   "context"
   "fmt"
-  "github.com/daytonaio/daytona/libs/sdk-go/pkg/daytona"
-  "github.com/daytonaio/daytona/libs/sdk-go/pkg/types"
+  "github.com/cognifyi/cogbox/libs/sdk-go/pkg/daytona"
+  "github.com/cognifyi/cogbox/libs/sdk-go/pkg/types"
 )
 
 func main() {

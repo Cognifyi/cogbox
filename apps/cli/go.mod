@@ -1,10 +1,10 @@
-module github.com/daytonaio/daytona/cli
+module github.com/cognifyi/cogbox/cli
 
 go 1.25.4
 
 require (
 	github.com/charmbracelet/bubbletea v1.1.0
-	github.com/daytonaio/daytona/libs/api-client-go v0.190.0
+	github.com/cognifyi/cogbox/libs/api-client-go v0.190.0
 	github.com/docker/docker v28.5.2+incompatible
 	github.com/google/uuid v1.6.0
 	github.com/mark3labs/mcp-go v0.32.0
@@ -97,3 +97,5 @@ require (
 	golang.org/x/term v0.42.0
 	gopkg.in/yaml.v2 v2.4.0
 )
+
+replace github.com/cognifyi/cogbox/libs/api-client-go => ../../libs/api-client-go

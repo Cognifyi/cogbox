@@ -8,7 +8,7 @@ import (
 	"log/slog"
 	"time"
 
-	"github.com/daytonaio/daemon/internal/util"
+	"github.com/cognifyi/cogbox/daemon/internal/util"
 	"github.com/google/uuid"
 	"github.com/gorilla/websocket"
 )

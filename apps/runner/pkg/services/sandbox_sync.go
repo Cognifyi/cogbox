@@ -9,10 +9,10 @@ import (
 	"log/slog"
 	"time"
 
-	apiclient "github.com/daytonaio/daytona/libs/api-client-go"
-	runnerapiclient "github.com/daytonaio/runner/pkg/apiclient"
-	"github.com/daytonaio/runner/pkg/docker"
-	"github.com/daytonaio/runner/pkg/models/enums"
+	apiclient "github.com/cognifyi/cogbox/libs/api-client-go"
+	runnerapiclient "github.com/cognifyi/cogbox/runner/pkg/apiclient"
+	"github.com/cognifyi/cogbox/runner/pkg/docker"
+	"github.com/cognifyi/cogbox/runner/pkg/models/enums"
 	"github.com/docker/docker/api/types/container"
 )
 

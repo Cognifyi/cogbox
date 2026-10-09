@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["daytonaio"]
   s.email       = ["support@daytona.io"]
-  s.homepage    = "https://github.com/daytonaio/daytona"
+  s.homepage    = "https://github.com/cognifyi/cogbox/daytona"
   s.summary     = "Daytona Ruby Gem"
   s.description = "Daytona API Client"
   s.license     = "Unlicense"

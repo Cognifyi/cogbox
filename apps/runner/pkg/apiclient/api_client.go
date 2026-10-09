@@ -6,8 +6,8 @@ package apiclient
 import (
 	"net/http"
 
-	apiclient "github.com/daytonaio/daytona/libs/api-client-go"
-	"github.com/daytonaio/runner/cmd/runner/config"
+	apiclient "github.com/cognifyi/cogbox/libs/api-client-go"
+	"github.com/cognifyi/cogbox/runner/cmd/runner/config"
 	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 )
 
