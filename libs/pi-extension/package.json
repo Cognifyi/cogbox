@@ -5,7 +5,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cognifyi/cogbox/daytona.git"
+    "url": "git+https://github.com/cognifyi/cogbox.git"
   },
   "author": "Daytona Platforms Inc.",
   "license": "Apache-2.0",

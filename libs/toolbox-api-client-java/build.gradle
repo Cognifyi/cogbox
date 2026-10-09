@@ -100,7 +100,7 @@ if(hasProperty('target') && target == 'android') {
                 pom {
                     name = 'Daytona Toolbox API Client'
                     description = 'Auto-generated Java client for the Daytona Toolbox API'
-                    url = 'https://github.com/cognifyi/cogbox/daytona'
+                    url = 'https://github.com/cognifyi/cogbox'
                     licenses {
                         license {
                             name = 'Apache License, Version 2.0'
@@ -115,9 +115,9 @@ if(hasProperty('target') && target == 'android') {
                         }
                     }
                     scm {
-                        connection = 'scm:git:git://github.com/cognifyi/cogbox/daytona.git'
+                        connection = 'scm:git:git://github.com/cognifyi/cogbox.git'
                         developerConnection = 'scm:git:ssh://github.com:daytonaio/daytona.git'
-                        url = 'https://github.com/cognifyi/cogbox/daytona'
+                        url = 'https://github.com/cognifyi/cogbox'
                     }
                 }
             }

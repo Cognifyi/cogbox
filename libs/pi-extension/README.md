@@ -134,7 +134,7 @@ This extension is part of the Daytona monorepo.
 First, clone the Daytona monorepo:
 
 ```bash
-git clone https://github.com/cognifyi/cogbox/daytona
+git clone https://github.com/cognifyi/cogbox
 cd daytona
 ```
 

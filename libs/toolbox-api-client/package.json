@@ -5,7 +5,7 @@
   "author": "OpenAPI-Generator Contributors",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cognifyi/cogbox/daytona.git"
+    "url": "https://github.com/cognifyi/cogbox.git"
   },
   "keywords": [
     "axios",

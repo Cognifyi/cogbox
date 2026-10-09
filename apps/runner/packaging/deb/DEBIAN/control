@@ -7,4 +7,4 @@ Maintainer: Daytona <support@daytona.io>
 Description: Daytona Runner
  The Daytona Runner manages execution of jobs and sandboxes
  for the Daytona development environment platform.
-Homepage: https://github.com/cognifyi/cogbox/daytona
+Homepage: https://github.com/cognifyi/cogbox

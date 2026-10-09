@@ -56,7 +56,7 @@ func main() {
 	}
 
 	// Clone a public repository
-	repoURL := "https://github.com/cognifyi/cogbox/daytona.git"
+	repoURL := "https://github.com/cognifyi/cogbox.git"
 	log.Printf("Cloning %s...\n", repoURL)
 	if err := sandbox.Git.Clone(ctx, repoURL, repoPath); err != nil {
 		log.Fatalf("Failed to clone repository: %v", err)
