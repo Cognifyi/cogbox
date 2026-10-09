@@ -116,21 +116,6 @@ jobs:
             fi
           done
 
-      - name: Ensure baseline v0.0.0 tag for changelog range
-        # Without any previous v* tag, nx renders the changelog from the very
-        # first commit (the entire upstream history, >125k chars) and the
-        # GitHub API rejects the release body with a 422. v0.0.0 marks the
-        # fork point so the first real release only lists fork commits.
-        # Real release tags supersede it automatically afterwards.
-        run: |
-          FORK_POINT=9fb50b35e35a6fb00cbe07936a230a611665fefe
-          if ! git rev-parse -q --verify "refs/tags/v0.0.0" >/dev/null; then
-            git tag v0.0.0 "$FORK_POINT"
-            git push origin refs/tags/v0.0.0
-          else
-            echo "Baseline tag v0.0.0 already exists, skipping."
-          fi
-
       - name: Create release
         env:
           FIRST_RELEASE: ${{ inputs['first-release'] }}
