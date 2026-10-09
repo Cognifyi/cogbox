@@ -146,7 +146,7 @@ Daytona は、Daytona プラットフォームと連携するための公式 Pyt
         </head>
         <body style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #0a0a0a; font-family: Arial, sans-serif;">
             <div style="text-align: center; padding: 2rem; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                <img src="https://raw.githubusercontent.com/daytonaio/daytona/main/assets/images/Daytona-logotype-black.png" alt="Daytona Logo" style="width: 180px; margin: 10px 0px;">
+                <img src="https://raw.githubusercontent.com/cognifyi/cogbox/main/assets/images/Daytona-logotype-black.png" alt="Daytona Logo" style="width: 180px; margin: 10px 0px;">
                 <p>This web app is running in a Daytona sandbox!</p>
             </div>
         </body>
@@ -206,7 +206,7 @@ Daytona は、Daytona プラットフォームと連携するための公式 Pyt
         </head>
         <body style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #0a0a0a; font-family: Arial, sans-serif;">
             <div style="text-align: center; padding: 2rem; border-radius: 10px; background-color: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                <img src="https://raw.githubusercontent.com/daytonaio/daytona/main/assets/images/Daytona-logotype-black.png" alt="Daytona Logo" style="width: 180px; margin: 10px 0px;">
+                <img src="https://raw.githubusercontent.com/cognifyi/cogbox/main/assets/images/Daytona-logotype-black.png" alt="Daytona Logo" style="width: 180px; margin: 10px 0px;">
                 <p>This web app is running in a Daytona sandbox!</p>
             </div>
         </body>
@@ -392,11 +392,11 @@ Daytona は、Daytona プラットフォームと連携するための公式 Pyt
 
 ## 追加の例
 
-Daytona SDK の [Python の例](https://github.com/daytonaio/daytona/tree/main/examples/python) または [TypeScript/JavaScript の例](https://github.com/daytonaio/daytona/tree/main/examples/typescript) を使ってサンドボックス（Daytonaが管理する隔離された一時的な実行環境）を作成し、コードを実行しましょう。
+Daytona SDK の [Python の例](https://github.com/cognifyi/cogbox/tree/main/examples/python) または [TypeScript/JavaScript の例](https://github.com/cognifyi/cogbox/tree/main/examples/typescript) を使ってサンドボックス（Daytonaが管理する隔離された一時的な実行環境）を作成し、コードを実行しましょう。
 
 LLM を活用して Daytona 上での開発を加速できます。/llms.txt ファイルをコピーし、プロジェクトやチャットのコンテキストに含めてください: [llms-full.txt](https://www.daytona.io/docs/llms-full.txt) または [llms.txt](https://www.daytona.io/docs/llms.txt)
 
-[GitHub](https://github.com/daytonaio/daytona) 上の Daytona SDK リポジトリを参照して、さらに詳しく学びましょう。
+[GitHub](https://github.com/cognifyi/cogbox) 上の Daytona SDK リポジトリを参照して、さらに詳しく学びましょう。
 
 ## ViteプロジェクトでのDaytona
 
@@ -458,13 +458,13 @@ export default nextConfig
 <Tabs syncKey="language">
   <TabItem label="Mac/Linux">
     ```bash
-    brew install daytonaio/cli/daytona
+    OS=$(uname -s | tr '[:upper:]' '[:lower:]'); ARCH=$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/'); sudo curl -fL "https://github.com/cognifyi/cogbox/releases/latest/download/daytona-${OS}-${ARCH}" -o /usr/local/bin/daytona && sudo chmod +x /usr/local/bin/daytona
     ```
   </TabItem>
 
   <TabItem label="Windows">
     ```bash
-    powershell -Command "irm https://get.daytona.io/windows | iex"
+    powershell -Command "Invoke-WebRequest -Uri https://github.com/cognifyi/cogbox/releases/latest/download/daytona-windows-amd64.exe -OutFile daytona.exe"
     ```
   </TabItem>
 </Tabs>

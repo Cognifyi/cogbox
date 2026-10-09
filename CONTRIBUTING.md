@@ -15,7 +15,7 @@ Thanks for taking the time to contribute! ❤️
 ## Code of Conduct
 
 This project and everyone participating in it is governed by the
-[Daytona Code of Conduct](https://github.com/daytonaio/daytona?tab=coc-ov-file#readme).
+[Daytona Code of Conduct](https://github.com/cognifyi/cogbox?tab=coc-ov-file#readme).
 By participating, you are expected to uphold this code. Please report unacceptable behavior
 to [info@daytona.io](mailto:info@daytona.io).
 

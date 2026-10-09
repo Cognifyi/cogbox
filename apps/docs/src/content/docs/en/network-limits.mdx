@@ -93,8 +93,8 @@ import (
 	"context"
 	"log"
 
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/daytona"
-	"github.com/daytonaio/daytona/libs/sdk-go/pkg/types"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/daytona"
+	"github.com/cognifyi/cogbox/libs/sdk-go/pkg/types"
 )
 
 func main() {
@@ -255,7 +255,7 @@ sandbox.update_network_settings(network_allow_list: '')
 <TabItem label="Go" icon="seti:go">
 
 ```go
-import apiclient "github.com/daytonaio/daytona/libs/api-client-go"
+import apiclient "github.com/cognifyi/cogbox/libs/api-client-go"
 
 settings := apiclient.NewUpdateSandboxNetworkSettings()
 settings.SetNetworkBlockAll(true)
