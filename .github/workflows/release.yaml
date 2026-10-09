@@ -76,9 +76,14 @@ jobs:
           go env -w GOFLAGS="-buildvcs=false"
 
         # Write version to required folders so nx release can run
+        # NOTE: nx release resolves the current version from package.json on disk
+        # (even with --first-release, which only falls back from git-tag to disk).
+        # Go projects have no package.json, so create a stub for every app/lib
+        # that is missing one. Otherwise the first such project in topological
+        # order (currently snapshot-manager) aborts the release.
       - name: Write package.json to required folders
         run: |
-          mkdir dist
+          mkdir -p dist
           echo '{
             "name": "api",
             "version": "0.0.0"
@@ -103,6 +108,13 @@ jobs:
             "name": "daytona-e2e",
             "version": "0.0.0"
           }' > apps/daytona-e2e/package.json
+          for dir in apps/*/ libs/*/; do
+            if [ ! -f "${dir}package.json" ]; then
+              name=$(basename "$dir")
+              echo "{\"name\": \"$name\", \"version\": \"0.0.0\"}" > "${dir}package.json"
+              echo "Created stub ${dir}package.json"
+            fi
+          done
 
       - name: Create release
         env:
