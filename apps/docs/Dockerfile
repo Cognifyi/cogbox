@@ -29,13 +29,16 @@ COPY libs/runner-api-client/ libs/runner-api-client/
 COPY libs/runner-proto/ libs/runner-proto/
 
 # Docs build arguments
-ENV PUBLIC_WEB_URL=https://daytona.io
+# NOTE: ${VAR:-default} keeps a working default when the build arg is missing
+# or empty (e.g. forks without the PUBLIC_* secrets). A plain
+# ARG X / ENV X=${X} would clobber the default with "", and astro rejects
+# site: "" with "[config] ! Invalid URL".
 ARG PUBLIC_ALGOLIA_APP_ID
 ENV PUBLIC_ALGOLIA_APP_ID=${PUBLIC_ALGOLIA_APP_ID}
 ARG PUBLIC_ALGOLIA_API_KEY
 ENV PUBLIC_ALGOLIA_API_KEY=${PUBLIC_ALGOLIA_API_KEY}
 ARG PUBLIC_WEB_URL
-ENV PUBLIC_WEB_URL=${PUBLIC_WEB_URL}
+ENV PUBLIC_WEB_URL=${PUBLIC_WEB_URL:-https://daytona.io}
 ARG PUBLIC_ALGOLIA_DOCS_INDEX_NAME=docs
 ENV PUBLIC_ALGOLIA_DOCS_INDEX_NAME=${PUBLIC_ALGOLIA_DOCS_INDEX_NAME}
 ARG PUBLIC_ALGOLIA_CLI_INDEX_NAME=cli
