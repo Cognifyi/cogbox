@@ -23,34 +23,18 @@ Daytona provides command-line access to core features for interacting with Dayto
 <Tabs syncKey="language">
 <TabItem label="Mac">
 
-```bash
-brew install daytonaio/cli/daytona
-```
-
-Trust the tap once so routine `brew upgrade` keeps the Daytona CLI up to date. Recent Homebrew versions require third-party taps to be explicitly trusted; without it, a bare `brew upgrade` skips the Daytona tap and the CLI goes stale:
-
-```bash
-brew trust daytonaio/cli
-```
-
-To upgrade the Daytona CLI to the latest version:
-
-```bash
-brew upgrade daytonaio/cli/daytona
-```
-
-Alternatively, install directly without Homebrew:
+Download the latest binary from GitHub releases and install it to `/usr/local/bin`.
 
 For Apple Silicon (`arm64`):
 
   ```bash
-  sudo curl -fL https://github.com/daytonaio/daytona/releases/latest/download/daytona-darwin-arm64 -o /usr/local/bin/daytona && sudo chmod +x /usr/local/bin/daytona
+  sudo curl -fL https://github.com/cognifyi/cogbox/releases/latest/download/daytona-darwin-arm64 -o /usr/local/bin/daytona && sudo chmod +x /usr/local/bin/daytona
   ```
 
 For Intel (`amd64`):
 
   ```bash
-  sudo curl -fL https://github.com/daytonaio/daytona/releases/latest/download/daytona-darwin-amd64 -o /usr/local/bin/daytona && sudo chmod +x /usr/local/bin/daytona
+  sudo curl -fL https://github.com/cognifyi/cogbox/releases/latest/download/daytona-darwin-amd64 -o /usr/local/bin/daytona && sudo chmod +x /usr/local/bin/daytona
   ```
 
 </TabItem>
@@ -61,20 +45,20 @@ Choose the command for your Linux architecture. Both commands download the lates
 For `amd64` (`x86_64`):
 
   ```bash
-  sudo curl -fL https://github.com/daytonaio/daytona/releases/latest/download/daytona-linux-amd64 -o /usr/local/bin/daytona && sudo chmod +x /usr/local/bin/daytona
+  sudo curl -fL https://github.com/cognifyi/cogbox/releases/latest/download/daytona-linux-amd64 -o /usr/local/bin/daytona && sudo chmod +x /usr/local/bin/daytona
   ```
 
 For `arm64` (`aarch64`):
 
   ```bash
-  sudo curl -fL https://github.com/daytonaio/daytona/releases/latest/download/daytona-linux-arm64 -o /usr/local/bin/daytona && sudo chmod +x /usr/local/bin/daytona
+  sudo curl -fL https://github.com/cognifyi/cogbox/releases/latest/download/daytona-linux-arm64 -o /usr/local/bin/daytona && sudo chmod +x /usr/local/bin/daytona
   ```
 
 </TabItem>
 <TabItem label="Windows">
 
 ```bash
-powershell -Command "irm https://get.daytona.io/windows | iex"
+powershell -Command "Invoke-WebRequest -Uri https://github.com/cognifyi/cogbox/releases/latest/download/daytona-windows-amd64.exe -OutFile daytona.exe"
 ```
 
 </TabItem>
@@ -141,7 +125,7 @@ Daytona provides a comprehensive set of [guides](/docs/en/guides) to help you ge
 ## Examples
 
 Daytona provides quick examples for common sandbox operations and best practices. <br />
-The examples are based on the Daytona [Python](/docs/en/python-sdk/), [TypeScript](/docs/en/typescript-sdk/), [Go](/docs/en/go-sdk/), [Ruby](/docs/en/ruby-sdk/), [Java](/docs/en/java-sdk/) **SDKs**, [CLI](/docs/en/tools/cli), and [API](/docs/en/tools/api) references. More examples are available in our [GitHub repository](https://github.com/daytonaio/daytona/tree/main/examples).
+The examples are based on the Daytona [Python](/docs/en/python-sdk/), [TypeScript](/docs/en/typescript-sdk/), [Go](/docs/en/go-sdk/), [Ruby](/docs/en/ruby-sdk/), [Java](/docs/en/java-sdk/) **SDKs**, [CLI](/docs/en/tools/cli), and [API](/docs/en/tools/api) references. More examples are available in our [GitHub repository](https://github.com/cognifyi/cogbox/tree/main/examples).
 
 ### Create a sandbox
 
@@ -180,7 +164,7 @@ import (
     "fmt"
     "log"
 
-    "github.com/daytonaio/daytona/libs/sdk-go/pkg/daytona"
+    "github.com/cognifyi/cogbox/libs/sdk-go/pkg/daytona"
 )
 
 func main() {
@@ -286,7 +270,7 @@ import (
     "fmt"
     "log"
 
-    "github.com/daytonaio/daytona/libs/sdk-go/pkg/daytona"
+    "github.com/cognifyi/cogbox/libs/sdk-go/pkg/daytona"
 )
 
 func main() {
@@ -422,8 +406,8 @@ import (
     "context"
     "log"
 
-    "github.com/daytonaio/daytona/libs/sdk-go/pkg/daytona"
-    "github.com/daytonaio/daytona/libs/sdk-go/pkg/types"
+    "github.com/cognifyi/cogbox/libs/sdk-go/pkg/daytona"
+    "github.com/cognifyi/cogbox/libs/sdk-go/pkg/types"
 )
 
 func main() {
@@ -551,8 +535,8 @@ import (
     "context"
     "log"
 
-    "github.com/daytonaio/daytona/libs/sdk-go/pkg/daytona"
-    "github.com/daytonaio/daytona/libs/sdk-go/pkg/types"
+    "github.com/cognifyi/cogbox/libs/sdk-go/pkg/daytona"
+    "github.com/cognifyi/cogbox/libs/sdk-go/pkg/types"
 )
 
 func main() {
@@ -672,8 +656,8 @@ import (
     "context"
     "log"
 
-    "github.com/daytonaio/daytona/libs/sdk-go/pkg/daytona"
-    "github.com/daytonaio/daytona/libs/sdk-go/pkg/types"
+    "github.com/cognifyi/cogbox/libs/sdk-go/pkg/daytona"
+    "github.com/cognifyi/cogbox/libs/sdk-go/pkg/types"
 )
 
 func main() {
@@ -800,8 +784,8 @@ import (
     "context"
     "log"
 
-    "github.com/daytonaio/daytona/libs/sdk-go/pkg/daytona"
-    "github.com/daytonaio/daytona/libs/sdk-go/pkg/types"
+    "github.com/cognifyi/cogbox/libs/sdk-go/pkg/daytona"
+    "github.com/cognifyi/cogbox/libs/sdk-go/pkg/types"
 )
 
 func main() {
@@ -929,8 +913,8 @@ import (
     "context"
     "log"
 
-    "github.com/daytonaio/daytona/libs/sdk-go/pkg/daytona"
-    "github.com/daytonaio/daytona/libs/sdk-go/pkg/types"
+    "github.com/cognifyi/cogbox/libs/sdk-go/pkg/daytona"
+    "github.com/cognifyi/cogbox/libs/sdk-go/pkg/types"
 )
 
 func main() {
@@ -1056,7 +1040,7 @@ from daytona import Daytona
 daytona = Daytona()
 sandbox = daytona.create()
 
-sandbox.git.clone("https://github.com/daytonaio/daytona.git", "/home/daytona/daytona")
+sandbox.git.clone("https://github.com/cognifyi/cogbox.git", "/home/daytona/daytona")
 status = sandbox.git.status("/home/daytona/daytona")
 print(f"Branch: {status.current_branch}")
 ```
@@ -1070,7 +1054,7 @@ import { Daytona } from '@daytona/sdk';
 const daytona = new Daytona();
 const sandbox = await daytona.create();
 
-await sandbox.git.clone('https://github.com/daytonaio/daytona.git', '/home/daytona/daytona');
+await sandbox.git.clone('https://github.com/cognifyi/cogbox.git', '/home/daytona/daytona');
 const status = await sandbox.git.status('/home/daytona/daytona');
 console.log(`Branch: ${status.currentBranch}`);
 ```
@@ -1086,7 +1070,7 @@ import (
     "fmt"
     "log"
 
-    "github.com/daytonaio/daytona/libs/sdk-go/pkg/daytona"
+    "github.com/cognifyi/cogbox/libs/sdk-go/pkg/daytona"
 )
 
 func main() {
@@ -1100,7 +1084,7 @@ func main() {
         log.Fatal(err)
     }
 
-    sandbox.Git.Clone(context.Background(), "https://github.com/daytonaio/daytona.git", "/home/daytona/daytona")
+    sandbox.Git.Clone(context.Background(), "https://github.com/cognifyi/cogbox.git", "/home/daytona/daytona")
     status, err := sandbox.Git.Status(context.Background(), "/home/daytona/daytona")
     if err != nil {
         log.Fatal(err)
@@ -1118,7 +1102,7 @@ require 'daytona'
 daytona = Daytona::Daytona.new
 sandbox = daytona.create
 
-sandbox.git.clone(url: "https://github.com/daytonaio/daytona.git", path: "/home/daytona/daytona")
+sandbox.git.clone(url: "https://github.com/cognifyi/cogbox.git", path: "/home/daytona/daytona")
 status = sandbox.git.status("/home/daytona/daytona")
 puts "Branch: #{status.current_branch}"
 ```
@@ -1135,7 +1119,7 @@ public class App {
     public static void main(String[] args) {
         try (Daytona daytona = new Daytona()) {
             Sandbox sandbox = daytona.create();
-            sandbox.git.clone("https://github.com/daytonaio/daytona.git", "/home/daytona/daytona");
+            sandbox.git.clone("https://github.com/cognifyi/cogbox.git", "/home/daytona/daytona");
             GitStatus status = sandbox.git.status("/home/daytona/daytona");
             System.out.println("Branch: " + status.getCurrentBranch());
         }
@@ -1160,7 +1144,7 @@ curl 'https://proxy.app.daytona.io/toolbox/{sandboxId}/git/clone' \
   --header 'Authorization: Bearer <API_KEY>' \
   --header 'Content-Type: application/json' \
   --data '{
-  "url": "https://github.com/daytonaio/daytona.git",
+  "url": "https://github.com/cognifyi/cogbox.git",
   "path": "/home/daytona/daytona"
 }'
 

