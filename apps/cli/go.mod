@@ -97,5 +97,3 @@ require (
 	golang.org/x/term v0.42.0
 	gopkg.in/yaml.v2 v2.4.0
 )
-
-replace github.com/cognifyi/cogbox/libs/api-client-go => ../../libs/api-client-go

@@ -3,7 +3,7 @@ module github.com/cognifyi/cogbox/proxy
 go 1.25.4
 
 require (
-	github.com/cognifyi/cogbox/libs/api-client-go v0.164.0
+	github.com/cognifyi/cogbox/libs/api-client-go v0.190.1
 	github.com/coreos/go-oidc/v3 v3.12.0
 	github.com/gin-contrib/cors v1.7.5
 	github.com/gin-gonic/gin v1.10.1
@@ -56,5 +56,3 @@ require (
 	google.golang.org/protobuf v1.36.11 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
-
-replace github.com/cognifyi/cogbox/libs/api-client-go => ../../libs/api-client-go
