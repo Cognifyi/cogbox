@@ -18,7 +18,8 @@ class CancelEvent(Protocol):
     download, the next chunk read after the event becomes set raises
     ``CogboxError``, closing the underlying HTTP connection."""
 
-    def is_set(self) -> bool: ...
+    def is_set(self) -> bool:
+        ...
 
 
 @dataclass

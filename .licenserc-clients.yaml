@@ -8,8 +8,8 @@ header:
       SPDX-License-Identifier: Apache-2.0
     pattern: |
       Copyright (\d{4} )?Daytona Platforms Inc\.
-      Copyright (\d{4} )?Cognifyi
-      SPDX-License-Identifier: Apache-2\.0
+      (Copyright (\d{4} )?Cognifyi
+      )?SPDX-License-Identifier: Apache-2\.0
   paths:
     - 'libs/**/*.go'
     - 'libs/**/*.sh'

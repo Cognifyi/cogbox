@@ -191,8 +191,7 @@ except CogboxConnectionError as exc:
 #### error\_class\_from\_status\_code
 
 ```python
-def error_class_from_status_code(
-        status_code: int | None) -> type[CogboxError]
+def error_class_from_status_code(status_code: int | None) -> type[CogboxError]
 ```
 
 Map an HTTP status code to the corresponding CogboxError subclass.
@@ -201,9 +200,9 @@ Map an HTTP status code to the corresponding CogboxError subclass.
 
 ```python
 def create_cogbox_error(message: str,
-                         status_code: int | None = None,
-                         headers: Mapping[str, Any] | None = None,
-                         error_code: str | None = None) -> CogboxError
+                        status_code: int | None = None,
+                        headers: Mapping[str, Any] | None = None,
+                        error_code: str | None = None) -> CogboxError
 ```
 
 Create the appropriate CogboxError subclass from structured error metadata.

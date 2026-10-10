@@ -315,6 +315,7 @@ cogbox organization create [ORGANIZATION_NAME] [flags]
 __Flags__
 | Long | Short | Description |
 | :--- | :---- | :---------- |
+| `--region` | `-r` | Default region (id or name) for the organization |
 | `--help` |  | help for cogbox |
 
 
@@ -350,6 +351,19 @@ Set active organization
 
 ```shell
 cogbox organization use [ORGANIZATION] [flags]
+```
+
+__Flags__
+| Long | Short | Description |
+| :--- | :---- | :---------- |
+| `--help` |  | help for cogbox |
+
+
+## cogbox pause
+Pause a sandbox
+
+```shell
+cogbox pause [SANDBOX_ID] | [SANDBOX_NAME] [flags]
 ```
 
 __Flags__
@@ -404,6 +418,7 @@ __Flags__
 | `--image` | `-i` | The image name for the snapshot |
 | `--memory` |  | Memory that will be allocated to the underlying sandboxes in GB (default: 1) |
 | `--region` |  | ID of the region where the snapshot will be available (defaults to organization default region) |
+| `--sandbox-class` |  | Target sandbox class for the snapshot. One of: 'container', 'linux-vm' or 'android' (defaults to organization/server default) |
 | `--help` |  | help for cogbox |
 
 
