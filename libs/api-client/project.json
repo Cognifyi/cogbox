@@ -49,7 +49,7 @@
       "options": {
         "cwd": "{workspaceRoot}/dist/libs/api-client",
         "commands": [
-          "npm publish --tag $NPM_TAG --access public --registry https://registry.npmjs.org/ --//registry.npmjs.org/:_authToken=$NPM_TOKEN"
+          "VER=${NPM_PKG_VERSION#v}; PKGVERSION=$(npm view @cogbox/api-client@$VER version 2>/dev/null); if [ -n \"$PKGVERSION\" ]; then echo \"@cogbox/api-client@$VER already on npm, skipping publish\"; else npm publish --tag $NPM_TAG --access public --registry https://registry.npmjs.org/ --//registry.npmjs.org/:_authToken=$NPM_TOKEN; fi"
         ],
         "parallel": false
       },
