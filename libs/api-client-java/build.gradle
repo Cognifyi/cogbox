@@ -111,7 +111,7 @@ if(hasProperty('target') && target == 'android') {
                         developer {
                             id = 'cognifyi'
                             name = 'Cogbox Platforms Inc.'
-                            email = 'support@cogbox.pazity.com'
+                            email = 'support@pazity.com'
                         }
                     }
                     scm {

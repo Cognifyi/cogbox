@@ -46,7 +46,7 @@ services:
       - SMTP_USER=
       - SMTP_PASSWORD=
       - SMTP_SECURE=
-      - SMTP_EMAIL_FROM=Cogbox Team <no-reply@cogbox.pazity.com>
+      - SMTP_EMAIL_FROM=Cogbox Team <no-reply@pazity.com>
       - S3_ENDPOINT=http://rustfs:9000
       - S3_STS_ENDPOINT=http://rustfs:9000
       - S3_REGION=us-east-1
@@ -193,7 +193,7 @@ services:
     image: dpage/pgadmin4:9.2.0
     entrypoint: ['sh', '-c', 'chmod 600 /pgpass && exec /entrypoint.sh']
     environment:
-      PGADMIN_DEFAULT_EMAIL: dev@cogbox.pazity.com
+      PGADMIN_DEFAULT_EMAIL: dev@pazity.com
       PGADMIN_DEFAULT_PASSWORD: pgadmin
       PGADMIN_CONFIG_SERVER_MODE: 'False'
       PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: 'False'

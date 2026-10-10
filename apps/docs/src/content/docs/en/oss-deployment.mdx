@@ -8,7 +8,7 @@ This guide will walk you through running Cogbox Open Source using Docker Compose
 The compose file can be found in the [docker](https://github.com/cognifyi/cogbox/tree/main/docker) folder of the Cogbox repository.
 
 :::note
-Cogbox is open source under the AGPL 3.0 license. You are free to deploy and run it in any environment. If you modify Cogbox, and make it available over a network, AGPL 3.0 license requires you to release your modifications under the same license. Self-hosted deployments are community-supported via GitHub and Slack. For self-hosted deployments with dedicated support, contact [support@cogbox.pazity.com](mailto:support@cogbox.pazity.com).
+Cogbox is open source under the AGPL 3.0 license. You are free to deploy and run it in any environment. If you modify Cogbox, and make it available over a network, AGPL 3.0 license requires you to release your modifications under the same license. Self-hosted deployments are community-supported via GitHub and Slack. For self-hosted deployments with dedicated support, contact [support@pazity.com](mailto:support@pazity.com).
 :::
 
 ## Overview
@@ -40,7 +40,7 @@ The Docker Compose configuration includes all the necessary services to run Cogb
 
 4. Access the services:
    - Cogbox Dashboard: http://localhost:3000
-     - Access Credentials: dev@cogbox.pazity.com `password`
+     - Access Credentials: dev@pazity.com `password`
      - Make sure that the default snapshot is active at http://localhost:3000/dashboard/snapshots
    - PgAdmin: http://localhost:5050
    - Registry UI: http://localhost:5100
@@ -376,7 +376,7 @@ Below is a full list of environment variables with their default values:
 | `SMTP_USER`                                | string  | (empty)                                              | SMTP username                                                                                                                                             |
 | `SMTP_PASSWORD`                            | string  | (empty)                                              | SMTP password                                                                                                                                             |
 | `SMTP_SECURE`                              | boolean | (empty)                                              | Enable SMTP secure connection                                                                                                                             |
-| `SMTP_EMAIL_FROM`                          | string  | `"Cogbox Team <no-reply@cogbox.pazity.com>"`               | SMTP sender email address                                                                                                                                 |
+| `SMTP_EMAIL_FROM`                          | string  | `"Cogbox Team <no-reply@pazity.com>"`               | SMTP sender email address                                                                                                                                 |
 | `S3_ENDPOINT`                              | string  | `http://minio:9000`                                  | S3-compatible storage endpoint                                                                                                                            |
 | `S3_STS_ENDPOINT`                          | string  | `http://minio:9000/minio/v1/assume-role`             | S3 STS endpoint                                                                                                                                           |
 | `S3_REGION`                                | string  | `us-east-1`                                          | S3 region                                                                                                                                                 |

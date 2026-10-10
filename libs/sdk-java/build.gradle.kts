@@ -81,7 +81,7 @@ publishing {
                     developer {
                         id.set("cognifyi")
                         name.set("Cogbox Platforms Inc.")
-                        email.set("support@cogbox.pazity.com")
+                        email.set("support@pazity.com")
                     }
                 }
 

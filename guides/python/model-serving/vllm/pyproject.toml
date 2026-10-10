@@ -3,7 +3,7 @@ name = "cogbox-vllm-serving"
 version = "0.1.0"
 description = "Serve an OpenAI-compatible vLLM endpoint on a Cogbox GPU sandbox"
 authors = [
-    {name = "Lovre Pesut", email = "lpesut@cogbox.pazity.com"}
+    {name = "Lovre Pesut", email = "lpesut@daytona.io"}
 ]
 readme = "README.md"
 requires-python = ">=3.10"

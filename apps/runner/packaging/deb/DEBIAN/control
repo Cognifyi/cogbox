@@ -3,7 +3,7 @@ Version: ${VERSION}
 Section: utils
 Priority: optional
 Architecture: amd64
-Maintainer: Cogbox <support@cogbox.pazity.com>
+Maintainer: Cogbox <support@pazity.com>
 Description: Cogbox Runner
  The Cogbox Runner manages execution of jobs and sandboxes
  for the Cogbox development environment platform.

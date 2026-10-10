@@ -61,7 +61,9 @@ RUN python3 -m pip install --no-cache-dir \
     opencv-python==4.13.0.90 \
     pillow==12.1.0 \
     sqlalchemy==2.0.46 \
-    cogbox==0.134.0 \
+    # NOTE: must match a published cogbox PyPI version - publish the SDK
+    # (sdk_publish workflow) before building images, and bump together.
+    cogbox==0.190.1 \
     pydantic-ai==1.47.0 \
     langchain==1.2.7 \
     transformers==4.57.6 \

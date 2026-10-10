@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.version     = CogboxApiClient::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["cognifyi"]
-  s.email       = ["support@cogbox.pazity.com"]
+  s.email       = ["support@pazity.com"]
   s.homepage    = "https://github.com/cognifyi/cogbox"
   s.summary     = "Cogbox Ruby Gem"
   s.description = "Cogbox API Client"

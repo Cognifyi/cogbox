@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.name = 'cogbox'
   spec.version = Cogbox::Sdk::VERSION
   spec.authors = ['Cogbox Platforms Inc.']
-  spec.email = ['support@cogbox.pazity.com']
+  spec.email = ['support@pazity.com']
 
   spec.summary = 'Ruby SDK for Cogbox'
   spec.description = 'High-level Ruby SDK for Cogbox: sandboxes, git, filesystem, LSP, process, and object storage.'

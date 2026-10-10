@@ -131,7 +131,7 @@ export class HostGitManager {
 
     // Provide a default identity for reservation commits when repo has no user.name/user.email (e.g. CI).
     const reservationCommitName = 'OpenCode Plugin'
-    const reservationCommitEmail = 'opencode@cogbox.pazity.com'
+    const reservationCommitEmail = 'opencode@pazity.com'
     const reservationCommitMessage = 'OpenCode reservation'
     const commitEnv = {
       ...process.env,

@@ -17,7 +17,7 @@ Thanks for taking the time to contribute! ❤️
 This project and everyone participating in it is governed by the
 [Cogbox Code of Conduct](https://github.com/cognifyi/cogbox?tab=coc-ov-file#readme).
 By participating, you are expected to uphold this code. Please report unacceptable behavior
-to [info@cogbox.pazity.com](mailto:info@cogbox.pazity.com).
+to [info@pazity.com](mailto:info@pazity.com).
 
 ## Provide Feedback
 

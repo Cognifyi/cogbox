@@ -2,7 +2,7 @@
 name = "cogbox-openenv-finqa"
 version = "0.1.0"
 description = "FinQA evaluation and training on Cogbox sandboxes using OpenEnv"
-authors = [{name = "Cogbox Team", email = "support@cogbox.pazity.com"}]
+authors = [{name = "Cogbox Team", email = "support@pazity.com"}]
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [

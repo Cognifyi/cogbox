@@ -31,7 +31,7 @@
       "options": {
         "commands": [
           "rm -rf libs/toolbox-api-client-ruby/lib",
-          "yarn run openapi-generator-cli generate -i apps/daemon/pkg/toolbox/docs/swagger.json -g ruby -t hack/ruby-client/openapi-templates --name-mappings hash=_hash --model-name-mappings computeruse.AccessibilityNode=ComputerUseAccessibilityNode --additional-properties=gemAuthor=cognifyi,gemAuthorEmail=support@cogbox.pazity.com,gemDescription=\\\"Cogbox Toolbox API Client\\\",gemHomepage=\\\"https://github.com/cognifyi/cogbox\\\",gemVersion=$DEFAULT_GEM_VERSION,gemName=cogbox_toolbox_api_client,enumUnknownDefaultCase=true -o libs/toolbox-api-client-ruby",
+          "yarn run openapi-generator-cli generate -i apps/daemon/pkg/toolbox/docs/swagger.json -g ruby -t hack/ruby-client/openapi-templates --name-mappings hash=_hash --model-name-mappings computeruse.AccessibilityNode=ComputerUseAccessibilityNode --additional-properties=gemAuthor=cognifyi,gemAuthorEmail=support@pazity.com,gemDescription=\\\"Cogbox Toolbox API Client\\\",gemHomepage=\\\"https://github.com/cognifyi/cogbox\\\",gemVersion=$DEFAULT_GEM_VERSION,gemName=cogbox_toolbox_api_client,enumUnknownDefaultCase=true -o libs/toolbox-api-client-ruby",
           "bash libs/toolbox-api-client-ruby/fix-gemspec.sh",
           "sed -i 's|OpenAPI-Generator/#{VERSION}/ruby|toolbox-api-client-ruby/#{VERSION}|' libs/toolbox-api-client-ruby/lib/cogbox_toolbox_api_client/api_client.rb",
           "cd libs/toolbox-api-client-ruby && bundle install"

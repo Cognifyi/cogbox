@@ -34,7 +34,7 @@ The Docker Compose configuration includes all the necessary services to run Cogb
 
 2. Access the services:
    - Cogbox Dashboard: http://localhost:3000
-     - Access Credentials: dev@cogbox.pazity.com `password`
+     - Access Credentials: dev@pazity.com `password`
      - Make sure that the default snapshot is active at http://localhost:3000/dashboard/snapshots
    - PgAdmin: http://localhost:5050
    - Registry UI: http://localhost:5100

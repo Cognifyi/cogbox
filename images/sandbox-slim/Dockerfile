@@ -20,9 +20,11 @@ SHELL ["/bin/bash", "-c"]
 RUN python3 -m pip install --no-cache-dir pipx==1.8.0 && pipx ensurepath && pipx install uv==0.9.26
 
 # Install Python LSP, cogbox and essential pip packages
+# NOTE: cogbox pin must match a published PyPI version - publish the SDK
+# (sdk_publish workflow) before building images, and bump together.
 RUN python3 -m pip install --no-cache-dir \
     python-lsp-server==1.14.0 \
-    cogbox==0.22.0 \
+    cogbox==0.190.1 \
     matplotlib==3.10.8 \
     pandas==2.2.3 \
     numpy==2.2.6

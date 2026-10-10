@@ -193,4 +193,4 @@ Note: if you are running Cogbox MCP Server on Windows OS, add the following to t
 
 ## Support
 
-For more information, visit [cogbox.pazity.com](https://cogbox.pazity.com) or contact support at support@cogbox.pazity.com.
+For more information, visit [cogbox.pazity.com](https://cogbox.pazity.com) or contact support at support@pazity.com.

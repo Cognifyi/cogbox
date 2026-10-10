@@ -6,7 +6,7 @@ At Cogbox, we take security seriously. If you believe you have found a security 
 
 **Please do NOT report security vulnerabilities through public GitHub issues.**
 
-Instead, please email us at: **security@cogbox.pazity.com**
+Instead, please email us at: **security@pazity.com**
 
 You can also report vulnerabilities privately through [GitHub's security advisory feature](https://github.com/cognifyi/cogbox/security/advisories/new).
 
@@ -78,7 +78,7 @@ We follow a coordinated disclosure process:
 
 - **90 days** — We target remediation within 90 days of a validated report. Complex issues may require additional time, and we will communicate timelines transparently.
 - **30 days post-patch** — After a fix is released, we ask that researchers wait 30 days before public disclosure to allow users to update.
-- **No response** — If we fail to acknowledge or respond to a report within 90 days, the researcher may proceed with public disclosure after providing 14 days advance written notice to security@cogbox.pazity.com.
+- **No response** — If we fail to acknowledge or respond to a report within 90 days, the researcher may proceed with public disclosure after providing 14 days advance written notice to security@pazity.com.
 
 ## Rewards
 

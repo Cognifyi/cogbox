@@ -39,8 +39,8 @@ export function LoadingFallbackContent({ className, source = 'unknown' }: Loadin
         <p className="text-sm text-muted-foreground text-center">This is taking longer than expected...</p>
         <p className="text-sm text-muted-foreground text-center">
           If this issue persists, contact us at{' '}
-          <a href="mailto:support@cogbox.pazity.com" className="text-primary underline">
-            support@cogbox.pazity.com
+          <a href="mailto:support@pazity.com" className="text-primary underline">
+            support@pazity.com
           </a>
           .
         </p>

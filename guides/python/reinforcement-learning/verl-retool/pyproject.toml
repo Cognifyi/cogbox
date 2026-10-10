@@ -2,7 +2,7 @@
 name = "cogbox-verl-retool"
 version = "0.1.0"
 description = "Companion files for benchmarking veRL ReTool backends with Cogbox"
-authors = [{name = "Cogbox Team", email = "support@cogbox.pazity.com"}]
+authors = [{name = "Cogbox Team", email = "support@pazity.com"}]
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [

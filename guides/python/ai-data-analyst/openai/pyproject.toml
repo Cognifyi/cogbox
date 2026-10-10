@@ -7,7 +7,7 @@ name = "openai-data-analysis-openai"
 version = "0.1.0"
 description = "Cogbox + OpenAI data analyst example in Python"
 authors = [
-    {name = "Cogbox Team", email = "support@cogbox.pazity.com"}
+    {name = "Cogbox Team", email = "support@pazity.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.10"
