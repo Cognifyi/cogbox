@@ -84,7 +84,7 @@
         "cwd": "{projectRoot}",
         "commands": [
           "mkdir -p ~/.gem && echo \":rubygems: $RUBYGEMS_API_KEY\" > ~/.gem/credentials && chmod 0600 ~/.gem/credentials",
-          "gem push cogbox-*.gem --key rubygems --host https://rubygems.org"
+          "VER=${RUBYGEMS_PKG_VERSION#v}; if [ -n \"$VER\" ] && gem list -r \"^cogbox$\" --version \"$VER\" 2>/dev/null | grep -q .; then echo \"cogbox==$VER already on RubyGems, skipping push\"; else gem push cogbox-*.gem --key rubygems --host https://rubygems.org; fi"
         ],
         "parallel": false
       },
