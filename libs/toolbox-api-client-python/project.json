@@ -39,7 +39,7 @@
       "options": {
         "cwd": "{projectRoot}",
         "commands": [
-          "poetry publish --username __token__ --password $PYPI_TOKEN --no-interaction",
+          "VER=${PYPI_PKG_VERSION#v}; if pip download cogbox_toolbox_api_client==$VER -q -d /tmp 2>/dev/null; then echo \"cogbox_toolbox_api_client==$VER already on PyPI, skipping publish\"; else poetry publish --username __token__ --password $PYPI_TOKEN --no-interaction; fi",
           "for i in $(seq 1 20); do if pip download cogbox_toolbox_api_client==${PYPI_PKG_VERSION} -q -d /tmp; then echo \"cogbox_toolbox_api_client==${PYPI_PKG_VERSION} is now downloadable from PyPI\" && sleep 5 && exit 0; else printf '.\n' && sleep 5; fi; done; echo \"Timeout waiting for cogbox_toolbox_api_client==${PYPI_PKG_VERSION} on PyPI\" >&2; exit 1"
         ],
         "parallel": false
