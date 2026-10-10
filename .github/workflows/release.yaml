@@ -26,7 +26,7 @@ env:
 
 jobs:
   publish:
-    if: github.repository == 'cognifyi/cogbox' || github.repository == 'cognifyi/cogbox'
+    if: github.repository == 'cognifyi/cogbox'
     runs-on: ubuntu-latest
     permissions:
       contents: write
